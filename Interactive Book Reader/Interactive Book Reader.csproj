@@ -7,6 +7,14 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>Scroll icon.ico</ApplicationIcon>
+    <SignAssembly>False</SignAssembly>
+    <Description>Программа для чтения, создания и редактирования интерактивных книг.</Description>
+    <Copyright>Open-Source Project</Copyright>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Scroll icon.ico" />
+  </ItemGroup>
 
 </Project>
