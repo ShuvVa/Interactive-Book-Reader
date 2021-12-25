@@ -42,16 +42,15 @@ namespace Interactive_Book_Reader
 
         private void OpenBookToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            StateLocked = true;
+
             if (OpenBookDialog.ShowDialog() == DialogResult.Cancel)
                 return;
-            // получаем выбранный файл
+            // Получаем выбранный файл
             string filename = OpenBookDialog.FileName;
-            // читаем файл в строку
-
+            // Передаем путь к файлу в поток ввода данных
             StreamReader FileReader = new StreamReader(filename);
             
-            
-
             try
             {
                 restored_book = JsonSerializer.Deserialize<Book>(FileReader.ReadLine());
@@ -65,20 +64,31 @@ namespace Interactive_Book_Reader
                 Chapter[] chapters = new [] { begin, end };
 
                 restored_book = new Book { BookAuthor = "Cool Author", BookTitle = "Cool Book", Password = "1111", Chapters = chapters };
+
+                MessageBox.Show(
+                    "Книга оказалась пустой. На место нее будет подключена шаблонная книга.",
+                    "Ошибка открытия книги",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error,
+                    MessageBoxDefaultButton.Button1
+                );
+            }
+            finally
+            {
+                MessageBox.Show(
+                    "Книга успешно открыта!",
+                    "Информация",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information,
+                    MessageBoxDefaultButton.Button1
+                );
+
+                StateLocked = false;
             }
                 
             FileReader.Close();
 
             ChangeChapter();
-
-
-            MessageBox.Show(
-                "Книга успешно открыта!",
-                "Информация",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Information,
-                MessageBoxDefaultButton.Button1
-            );
             }
 
         private void AcceptButton_Click(object sender, EventArgs e)
@@ -99,7 +109,13 @@ namespace Interactive_Book_Reader
 
                 if (selectedVariant == null)
                 {
-                    MessageBox.Show($"Вы ничего не выбрали. Пожалуйста, выберите вариант дальнейшего развития событий.");
+                    MessageBox.Show(
+                    "Вы не выбрали ни один из вариантов. Пожалуйста, выберите вариант дальнейшего развития событий.",
+                    "Ошибка чтения",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error,
+                    MessageBoxDefaultButton.Button1
+                );
                 }
 
                 else
@@ -113,27 +129,27 @@ namespace Interactive_Book_Reader
             }
         }
 
-            private void OpenFontParametersToolStripMenuItem_Click(object sender, EventArgs e)
-            {
-                if (fontDialog.ShowDialog() == DialogResult.Cancel)
-                    return;
-                // установка шрифта
-                ChoiceOptions.Font = fontDialog.Font;
-                ChapterText.Font = fontDialog.Font;
-                AcceptButton.Font = fontDialog.Font;
-            }
+        private void OpenFontParametersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (fontDialog.ShowDialog() == DialogResult.Cancel)
+                return;
+            // установка шрифта
+            ChoiceOptions.Font = fontDialog.Font;
+            ChapterText.Font = fontDialog.Font;
+            AcceptButton.Font = fontDialog.Font;
+        }
 
-            private void MainWindow_Load(object sender, EventArgs e)
-            {
-                ChoiceOptions.SelectedIndex = 0;
-            }
+        private void MainWindow_Load(object sender, EventArgs e)
+        {
+            ChoiceOptions.SelectedIndex = 0;
+        }
 
-            private void OpenBookEditorToolStripMenuItem_Click(object sender, EventArgs e)
-            {
-                BookEditor form = new BookEditor();
+        private void OpenBookEditorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BookEditor form = new BookEditor();
 
-                form.ShowDialog();
-            }
+            form.ShowDialog();
+        }
 
         private void BookReader_Load(object sender, EventArgs e)
         {

@@ -218,7 +218,7 @@
             this.PasswordChecking.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PasswordChecking.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.PasswordChecking.Location = new System.Drawing.Point(163, 465);
+            this.PasswordChecking.Location = new System.Drawing.Point(181, 465);
             this.PasswordChecking.MaxLength = 200;
             this.PasswordChecking.Name = "PasswordChecking";
             this.PasswordChecking.PlaceholderText = "Подтверждение пароля";
@@ -233,11 +233,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PasswordSetupLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.PasswordSetupLabel.Font = new System.Drawing.Font("Courier New", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.PasswordSetupLabel.Location = new System.Drawing.Point(43, 349);
+            this.PasswordSetupLabel.Location = new System.Drawing.Point(34, 349);
             this.PasswordSetupLabel.Margin = new System.Windows.Forms.Padding(10);
             this.PasswordSetupLabel.Name = "PasswordSetupLabel";
             this.PasswordSetupLabel.Padding = new System.Windows.Forms.Padding(10);
-            this.PasswordSetupLabel.Size = new System.Drawing.Size(925, 54);
+            this.PasswordSetupLabel.Size = new System.Drawing.Size(934, 54);
             this.PasswordSetupLabel.TabIndex = 13;
             this.PasswordSetupLabel.Text = "Установка пароля для книги";
             this.PasswordSetupLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -247,7 +247,7 @@
             this.PasswordSetBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PasswordSetBox.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.PasswordSetBox.Location = new System.Drawing.Point(163, 416);
+            this.PasswordSetBox.Location = new System.Drawing.Point(181, 416);
             this.PasswordSetBox.MaxLength = 200;
             this.PasswordSetBox.Name = "PasswordSetBox";
             this.PasswordSetBox.PlaceholderText = "Пароль";
@@ -273,11 +273,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.AuthorLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.AuthorLabel.Font = new System.Drawing.Font("Courier New", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.AuthorLabel.Location = new System.Drawing.Point(43, 179);
+            this.AuthorLabel.Location = new System.Drawing.Point(34, 179);
             this.AuthorLabel.Margin = new System.Windows.Forms.Padding(10);
             this.AuthorLabel.Name = "AuthorLabel";
             this.AuthorLabel.Padding = new System.Windows.Forms.Padding(10);
-            this.AuthorLabel.Size = new System.Drawing.Size(925, 64);
+            this.AuthorLabel.Size = new System.Drawing.Size(934, 64);
             this.AuthorLabel.TabIndex = 10;
             this.AuthorLabel.Text = "Автор книги";
             this.AuthorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -287,7 +287,7 @@
             this.BookAuthorEditor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.BookAuthorEditor.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BookAuthorEditor.Location = new System.Drawing.Point(163, 256);
+            this.BookAuthorEditor.Location = new System.Drawing.Point(181, 256);
             this.BookAuthorEditor.MaxLength = 200;
             this.BookAuthorEditor.Name = "BookAuthorEditor";
             this.BookAuthorEditor.PlaceholderText = "Фамилия Имя/Ник";
@@ -301,11 +301,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.BookLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.BookLabel.Font = new System.Drawing.Font("Courier New", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BookLabel.Location = new System.Drawing.Point(43, 25);
+            this.BookLabel.Location = new System.Drawing.Point(34, 25);
             this.BookLabel.Margin = new System.Windows.Forms.Padding(10);
             this.BookLabel.Name = "BookLabel";
             this.BookLabel.Padding = new System.Windows.Forms.Padding(10);
-            this.BookLabel.Size = new System.Drawing.Size(925, 64);
+            this.BookLabel.Size = new System.Drawing.Size(934, 64);
             this.BookLabel.TabIndex = 8;
             this.BookLabel.Text = "Название книги";
             this.BookLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -315,7 +315,7 @@
             this.BookLabelEditor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.BookLabelEditor.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BookLabelEditor.Location = new System.Drawing.Point(163, 102);
+            this.BookLabelEditor.Location = new System.Drawing.Point(181, 102);
             this.BookLabelEditor.MaxLength = 200;
             this.BookLabelEditor.Name = "BookLabelEditor";
             this.BookLabelEditor.PlaceholderText = "Крутая книга";
@@ -525,7 +525,7 @@
             // VariantsGridSaveChangesButton
             // 
             this.VariantsGridSaveChangesButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.VariantsGridSaveChangesButton.Location = new System.Drawing.Point(803, 613);
+            this.VariantsGridSaveChangesButton.Location = new System.Drawing.Point(801, 611);
             this.VariantsGridSaveChangesButton.Name = "VariantsGridSaveChangesButton";
             this.VariantsGridSaveChangesButton.Size = new System.Drawing.Size(189, 41);
             this.VariantsGridSaveChangesButton.TabIndex = 14;
