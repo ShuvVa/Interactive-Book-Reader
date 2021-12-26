@@ -132,10 +132,11 @@ namespace Interactive_Book_Reader
             //  Блок чтения книги с файла
             string filename = OpenBookDialog.FileName;
             StreamReader FileReader = new StreamReader(filename);
+            Book temp_book = new Book();
 
             try
             {
-                book_editable = JsonSerializer.Deserialize<Book>(FileReader.ReadLine());
+                temp_book = JsonSerializer.Deserialize<Book>(FileReader.ReadLine());
             }
             catch (System.ArgumentNullException)
             {
@@ -150,16 +151,19 @@ namespace Interactive_Book_Reader
                 Viginer_95 viginer_95 = new Viginer_95(book_editable.Password);
                 book_editable.Password = viginer_95.Encrypt();
             }
+
+            
             
             FileReader.Close();
 
             //  Вызов формы проверки пароля
-            PasswordCheck form = new PasswordCheck(book_editable.Password);
+            PasswordCheck form = new PasswordCheck(temp_book.Password);
             form.ShowDialog();
 
             //В случае, если форма пройдена, идет загрузка данных книги
             if (form.GetPasswordsEqual() == true)
             {
+                book_editable = temp_book;
                 GetBookData();
             }
 
@@ -504,6 +508,19 @@ namespace Interactive_Book_Reader
             }
         }
 
+        private bool AnyEqualKey()
+        {
+            for (int i = 0; i < VariantsGrid.RowCount; i++)
+            {
+                for (int j = 0; j < VariantsGrid.ColumnCount; j++)
+                {
+                    if ((VariantsGrid[1, i].Value.ToString() == VariantsGrid[1, j].Value.ToString()) && (i != j))
+                        return true;
+                }
+            }
+            return false;
+        }
+
         private bool StrHasOtherChars(string str)
         {
             for (int i = 0;i < str.Length; i++)
@@ -550,6 +567,18 @@ namespace Interactive_Book_Reader
                         MessageBoxDefaultButton.Button1
                     );
                     IsError = true;
+                }
+                else if (AnyEqualKey())
+                {
+                    MessageBox.Show(
+                        "Какие-то из вариантов - одинаковые. Попробуйте их отредактировать и сохранить вновь.",
+                        "Ошибка сохранения",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error,
+                        MessageBoxDefaultButton.Button1
+                    );
+                    IsError = true;
+                    break;
                 }
                 else if (VariantsGrid[2, i].Value == null)
                 {

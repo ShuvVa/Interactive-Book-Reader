@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Interactive_Book_Reader.Chapter">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Book.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Interactive_Book_Reader.Book">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAQAACAAAAAIAAAAA=</HashCode>
+      <FileName>Book.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Interactive_Book_Reader.BookEditor">
+    <Position X="24.75" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>hgBSIggQAWhsACLhgoDQDQICLAAkjCagAcMCEggIoMY=</HashCode>
+      <FileName>BookEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Interactive_Book_Reader.BookReader">
+    <Position X="21.5" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAQAACAAIAAgACKCAkAKACAIAAIACQIBAjAAIIA=</HashCode>
+      <FileName>BookReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Interactive_Book_Reader.ChangeChapter">
+    <Position X="12.5" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIACAEAAAAAICAAAACACAAACAAAAAAhAAAAAA=</HashCode>
+      <FileName>ChangeChapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Interactive_Book_Reader.DeleteChapter">
+    <Position X="18.25" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgCACAFAAAAKAAAASACEAEiAAAAAAAAgAAAA=</HashCode>
+      <FileName>DeleteChapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Interactive_Book_Reader.PasswordCheck">
+    <Position X="15.75" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAICCEAAAAAACAEAACAEACAAAAAgBAABAAAAA=</HashCode>
+      <FileName>PasswordCheck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Interactive_Book_Reader.Program">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Interactive_Book_Reader.Viginer_95">
+    <Position X="10.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAQQEAAAAAAAAAAAAAACIAABIAAAAAA=</HashCode>
+      <FileName>Viginer_95.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
