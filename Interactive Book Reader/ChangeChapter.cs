@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.ComponentModel;
+//using System.Data;
+//using System.Drawing;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+//using System.Windows.Forms;
 
 namespace Interactive_Book_Reader
 {
@@ -15,7 +15,7 @@ namespace Interactive_Book_Reader
 
         static int new_id = 0;
 
-        static bool SucessfulChange = false;
+        //static bool SucessfulChange = false;
 
         public int GetNew_Id()
         {
@@ -34,7 +34,7 @@ namespace Interactive_Book_Reader
 
         private void ChangeChapter_AcceptChangesButton_Click(object sender, EventArgs e)
         {
-            string? selectedVariant = ChangeChapter_ChapterIDComboBox.SelectedItem.ToString();
+            string? selectedVariant = ChangeChapter_ChapterIDComboBox.SelectedItem?.ToString();
 
             if (selectedVariant == null)
             {
@@ -49,7 +49,7 @@ namespace Interactive_Book_Reader
             else
             {
                 new_id = Convert.ToInt32(selectedVariant);
-                SucessfulChange = true;
+                //SucessfulChange = true;
                 Close();
             }
         }

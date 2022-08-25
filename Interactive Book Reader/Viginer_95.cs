@@ -1,19 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+//using System.Threading.Tasks;
 
 namespace Interactive_Book_Reader
 {
-    //  Модификация шифра Вижинера, шифрующая сообщения в пределах 95 символов (ASCII - [32;126] )
+    // Модификация шифра Вижинера, шифрующая сообщения в пределах 95 символов (ASCII - [32;126])
     internal class Viginer_95
     {
-        private string Message; //Переменная, содержащая в себе принимаемое/передаваемое сообщение
+        private string Message; // Переменная, содержащая в себе принимаемое/передаваемое сообщение
 
-        private string Key; //Ключ для шифрования/дешифрования сообщения
+        private string Key; // Ключ для шифрования/дешифрования сообщения
 
-        public Viginer_95() //Конструктор класса по-умолчанию
+        public Viginer_95() // Конструктор класса по-умолчанию
         {
             Message = "";
             Key = "";
@@ -25,22 +25,22 @@ namespace Interactive_Book_Reader
             Key = _key;
         }
 
-        public string Get_Message() //Возвращение значения сообщения
+        public string Get_Message() // Возвращение значения сообщения
         {
             return Message;
         }
 
-        public string Get_Key() //Возвращение значения ключа
+        public string Get_Key() // Возвращение значения ключа
         {
             return Key;
         }
 
-        public void Set_Message(string _message)    //Установка значения сообщения
+        public void Set_Message(string _message)    // Установка значения сообщения
         {
             Message = _message;
         }
 
-        public void Set_Key(string _key)    //Возвращение значения ключа
+        public void Set_Key(string _key)    // Возвращение значения ключа
         {
             Key = _key;
         }
@@ -48,15 +48,15 @@ namespace Interactive_Book_Reader
         //Шшифровка сообщения
         public string Encrypt()
         {
-            StringBuilder sb = new StringBuilder(Message);  //Объект, используемый для переопределения Message
-            int keyLen = Key.Length;    //Переменная, отвечающая за длину ключа
+            StringBuilder sb = new StringBuilder(Message);  // Объект, используемый для переопределения Message
+            int keyLen = Key.Length;    // Переменная, отвечающая за длину ключа
 
             for (int i = 0, shift, edited_char; i < Message.Length; i++)
             {
-                shift = Key[i % keyLen] - ' ';  //Переменная, отвечающая за сдвиг символа по символу ключа
+                shift = Key[i % keyLen] - ' ';  // Переменная, отвечающая за сдвиг символа по символу ключа
 
-                edited_char = Message[i] + shift;   //Переменная, содержащая в себе измененный символ
-                if (edited_char > 126) edited_char -= 95;    //Сдвиг по (mod 95)
+                edited_char = Message[i] + shift;   // Переменная, содержащая в себе измененный символ
+                if (edited_char > 126) edited_char -= 95;    // Сдвиг по (mod 95)
 
                 sb[i] = (Convert.ToChar(edited_char));
             }
@@ -64,18 +64,18 @@ namespace Interactive_Book_Reader
             return Message = sb.ToString();
         }
 
-        //Дешифровка сообщения
+        // Дешифровка сообщения
         public string Decrypt()
         {
-            StringBuilder sb = new StringBuilder(Message);  //Объект, используемый для переопределения Message
-            int keyLen = Key.Length;    //Переменная, отвечающая за длину ключа
+            StringBuilder sb = new StringBuilder(Message);  // Объект, используемый для переопределения Message
+            int keyLen = Key.Length;    // Переменная, отвечающая за длину ключа
 
             for (int i = 0, shift, edited_char; i < Message.Length; i++)
             {
-                shift = Key[i % keyLen] - ' ';  //Переменная, отвечающая за сдвиг символа по символу ключа
+                shift = Key[i % keyLen] - ' ';  // Переменная, отвечающая за сдвиг символа по символу ключа
 
-                edited_char = Message[i] - shift;   //Переменная, содержащая в себе измененный символ
-                if (edited_char < 32) edited_char += 95;    //Сдвиг по (mod 95)
+                edited_char = Message[i] - shift;   // Переменная, содержащая в себе измененный символ
+                if (edited_char < 32) edited_char += 95;    // Сдвиг по (mod 95)
 
                 sb[i] = (Convert.ToChar(edited_char));
             }

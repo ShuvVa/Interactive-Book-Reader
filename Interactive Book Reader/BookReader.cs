@@ -1,7 +1,7 @@
-using System;
-using System.IO;
+//using System;
+//using System.IO;
 using System.Text.Json;
-using System.Threading.Tasks;
+//using System.Threading.Tasks;
 
 namespace Interactive_Book_Reader
 {
@@ -11,7 +11,7 @@ namespace Interactive_Book_Reader
         {
             InitializeComponent();
 
-            //OpenBookDialog.Filter = "Файл интерактивной книги (*.ibr)|*.ibr|Текстовый документ (*.txt)|*.txt|Все файлы (*.*)|*.*";
+            //OpenBookDialog.Filter = "Р¤Р°Р№Р» РёРЅС‚РµСЂР°РєС‚РёРІРЅРѕР№ РєРЅРёРіРё (*.ibr)|*.ibr|РўРµРєСЃС‚РѕРІС‹Р№ РґРѕРєСѓРјРµРЅС‚ (*.txt)|*.txt|Р’СЃРµ С„Р°Р№Р»С‹ (*.*)|*.*";
         }
 
         static Book restored_book = new Book();
@@ -46,9 +46,9 @@ namespace Interactive_Book_Reader
 
             if (OpenBookDialog.ShowDialog() == DialogResult.Cancel)
                 return;
-            // Получаем выбранный файл
+            // РџРѕР»СѓС‡Р°РµРј РІС‹Р±СЂР°РЅРЅС‹Р№ С„Р°Р№Р»
             string filename = OpenBookDialog.FileName;
-            // Передаем путь к файлу в поток ввода данных
+            // РџРµСЂРµРґР°РµРј РїСѓС‚СЊ Рє С„Р°Р№Р»Сѓ РІ РїРѕС‚РѕРє РІРІРѕРґР° РґР°РЅРЅС‹С…
             StreamReader FileReader = new StreamReader(filename);
             
             try
@@ -66,8 +66,8 @@ namespace Interactive_Book_Reader
                 restored_book = new Book { BookAuthor = "Cool Author", BookTitle = "Cool Book", Password = "1111", Chapters = chapters };
 
                 MessageBox.Show(
-                    "Книга оказалась пустой. На место нее будет подключена шаблонная книга.",
-                    "Ошибка открытия книги",
+                    "РљРЅРёРіР° РѕРєР°Р·Р°Р»Р°СЃСЊ РїСѓСЃС‚РѕР№. РќР° РјРµСЃС‚Рѕ РЅРµРµ Р±СѓРґРµС‚ РїРѕРґРєР»СЋС‡РµРЅР° С€Р°Р±Р»РѕРЅРЅР°СЏ РєРЅРёРіР°.",
+                    "РћС€РёР±РєР° РѕС‚РєСЂС‹С‚РёСЏ РєРЅРёРіРё",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error,
                     MessageBoxDefaultButton.Button1
@@ -76,8 +76,8 @@ namespace Interactive_Book_Reader
             finally
             {
                 MessageBox.Show(
-                    "Книга успешно открыта!",
-                    "Информация",
+                    "РљРЅРёРіР° СѓСЃРїРµС€РЅРѕ РѕС‚РєСЂС‹С‚Р°!",
+                    "РРЅС„РѕСЂРјР°С†РёСЏ",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information,
                     MessageBoxDefaultButton.Button1
@@ -96,8 +96,8 @@ namespace Interactive_Book_Reader
             if (StateLocked)
             {
                 MessageBox.Show(
-                    "Книга не была выбрана.",
-                    "Ошибка чтения",
+                    "РљРЅРёРіР° РЅРµ Р±С‹Р»Р° РІС‹Р±СЂР°РЅР°.",
+                    "РћС€РёР±РєР° С‡С‚РµРЅРёСЏ",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error,
                     MessageBoxDefaultButton.Button1
@@ -110,8 +110,8 @@ namespace Interactive_Book_Reader
                 if (selectedVariant == null)
                 {
                     MessageBox.Show(
-                    "Вы не выбрали ни один из вариантов. Пожалуйста, выберите вариант дальнейшего развития событий.",
-                    "Ошибка чтения",
+                    "Р’С‹ РЅРµ РІС‹Р±СЂР°Р»Рё РЅРё РѕРґРёРЅ РёР· РІР°СЂРёР°РЅС‚РѕРІ. РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РІС‹Р±РµСЂРёС‚Рµ РІР°СЂРёР°РЅС‚ РґР°Р»СЊРЅРµР№С€РµРіРѕ СЂР°Р·РІРёС‚РёСЏ СЃРѕР±С‹С‚РёР№.",
+                    "РћС€РёР±РєР° С‡С‚РµРЅРёСЏ",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error,
                     MessageBoxDefaultButton.Button1
@@ -133,7 +133,7 @@ namespace Interactive_Book_Reader
         {
             if (fontDialog.ShowDialog() == DialogResult.Cancel)
                 return;
-            // установка шрифта
+            // СѓСЃС‚Р°РЅРѕРІРєР° С€СЂРёС„С‚Р°
             ChoiceOptions.Font = fontDialog.Font;
             ChapterText.Font = fontDialog.Font;
             AcceptButton.Font = fontDialog.Font;
