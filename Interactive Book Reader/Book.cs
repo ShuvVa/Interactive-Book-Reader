@@ -23,7 +23,6 @@ namespace Interactive_Book_Reader
     [Serializable]
     public class Book
     {
-        
         public string BookAuthor { get; set; }
 
         public string BookTitle { get; set; }
