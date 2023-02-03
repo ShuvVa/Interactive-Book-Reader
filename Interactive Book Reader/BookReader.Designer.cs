@@ -135,7 +135,7 @@
             // 
             this.OpenBookToolStripMenuItem.BackColor = System.Drawing.Color.BurlyWood;
             this.OpenBookToolStripMenuItem.Name = "OpenBookToolStripMenuItem";
-            this.OpenBookToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.OpenBookToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
             this.OpenBookToolStripMenuItem.Text = "Открыть книгу";
             this.OpenBookToolStripMenuItem.Click += new System.EventHandler(this.OpenBookToolStripMenuItem_Click);
             // 
@@ -181,7 +181,6 @@
             this.Padding = new System.Windows.Forms.Padding(5, 0, 5, 20);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Interactive Book Reader";
-            this.Load += new System.EventHandler(this.BookReader_Load);
             this.BookReaderStrip.ResumeLayout(false);
             this.BookReaderStrip.PerformLayout();
             this.ResumeLayout(false);

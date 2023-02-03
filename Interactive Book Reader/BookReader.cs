@@ -11,8 +11,6 @@ namespace Interactive_Book_Reader
         public BookReader()
         {
             InitializeComponent();
-
-            //OpenBookDialog.Filter = "Файл интерактивной книги (*.ibr)|*.ibr|Текстовый документ (*.txt)|*.txt|Все файлы (*.*)|*.*";
         }
 
         static Book restored_book = new Book();
