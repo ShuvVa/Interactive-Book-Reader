@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interactive Book Reader", "Interactive Book Reader\Interactive Book Reader.csproj", "{E6B9C14C-D64B-40DC-B06F-122C832001BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interactive Book Reader", "Interactive Book Reader\Interactive Book Reader.csproj", "{E6B9C14C-D64B-40DC-B06F-122C832001BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interactive Book Editor", "Interactive Book Editor\Interactive Book Editor.csproj", "{252DB0C5-FF1D-46CE-B508-BD81940158A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interactive Book Core", "Interactive Book Core\Interactive Book Core.csproj", "{0CE514A7-4CF7-4449-9939-92A358A3059A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{E6B9C14C-D64B-40DC-B06F-122C832001BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6B9C14C-D64B-40DC-B06F-122C832001BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6B9C14C-D64B-40DC-B06F-122C832001BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{252DB0C5-FF1D-46CE-B508-BD81940158A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{252DB0C5-FF1D-46CE-B508-BD81940158A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{252DB0C5-FF1D-46CE-B508-BD81940158A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{252DB0C5-FF1D-46CE-B508-BD81940158A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CE514A7-4CF7-4449-9939-92A358A3059A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CE514A7-4CF7-4449-9939-92A358A3059A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CE514A7-4CF7-4449-9939-92A358A3059A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CE514A7-4CF7-4449-9939-92A358A3059A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

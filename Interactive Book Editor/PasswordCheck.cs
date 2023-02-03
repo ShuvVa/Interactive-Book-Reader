@@ -7,8 +7,9 @@
 //using System.Text;
 //using System.Threading.Tasks;
 //using System.Windows.Forms;
+using Interactive_Book_Namespace;
 
-namespace Interactive_Book_Namespace
+namespace Interactive_Book_Editor
 {
     
     public partial class PasswordCheck : Form

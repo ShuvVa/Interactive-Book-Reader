@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows7.0</TargetFramework>
+    <RootNamespace>Interactive_Book_Editor</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <StartupObject>Interactive_Book_Editor.Program</StartupObject>
+    <ApplicationIcon>Scroll icon.ico</ApplicationIcon>
+    <UseWindowsForms>True</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Scroll icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Interactive Book Core\Interactive Book Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="BookEditor.cs" />
+    <Compile Update="ChangeChapter.cs" />
+    <Compile Update="DeleteChapter.cs" />
+    <Compile Update="PasswordCheck.cs" />
+  </ItemGroup>
+
+</Project>

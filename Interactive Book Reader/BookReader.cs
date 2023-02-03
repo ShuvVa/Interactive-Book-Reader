@@ -2,8 +2,9 @@
 //using System.IO;
 using System.Text.Json;
 //using System.Threading.Tasks;
+using Interactive_Book_Namespace;
 
-namespace Interactive_Book_Namespace
+namespace Interactive_Book_Reader
 {
     public partial class BookReader : Form
     {
@@ -146,9 +147,9 @@ namespace Interactive_Book_Namespace
 
         private void OpenBookEditorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            BookEditor form = new BookEditor();
+            //BookEditor form = new BookEditor();
 
-            form.ShowDialog();
+            //form.ShowDialog();
         }
 
         private void BookReader_Load(object sender, EventArgs e)

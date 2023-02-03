@@ -1,5 +1,4 @@
-//using System.Reflection;
-namespace Interactive_Book_Reader
+namespace Interactive_Book_Editor
 {
     internal static class Program
     {
@@ -9,8 +8,10 @@ namespace Interactive_Book_Reader
         [STAThread]
         static void Main()
         {
+            // To customize application configuration such as set high DPI settings or default font,
+            // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new BookReader());
+            Application.Run(new BookEditor());
         }
     }
 }

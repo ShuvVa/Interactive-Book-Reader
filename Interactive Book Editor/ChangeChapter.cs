@@ -8,7 +8,7 @@
 //using System.Threading.Tasks;
 //using System.Windows.Forms;
 
-namespace Interactive_Book_Namespace
+namespace Interactive_Book_Editor
 {
     public partial class ChangeChapter : Form
     {

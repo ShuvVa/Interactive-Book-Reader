@@ -1,4 +1,4 @@
-﻿namespace Interactive_Book_Namespace
+﻿namespace Interactive_Book_Reader
 {
     partial class BookReader
     {
@@ -36,7 +36,6 @@
             this.BookReaderStrip = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OpenBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.OpenBookEditorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.параметрыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OpenFontParametersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OpenBookDialog = new System.Windows.Forms.OpenFileDialog();
@@ -127,8 +126,7 @@
             // 
             this.файлToolStripMenuItem.BackColor = System.Drawing.Color.DarkGoldenrod;
             this.файлToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.OpenBookToolStripMenuItem,
-            this.OpenBookEditorToolStripMenuItem});
+            this.OpenBookToolStripMenuItem});
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
             this.файлToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
             this.файлToolStripMenuItem.Text = "Файл";
@@ -137,17 +135,9 @@
             // 
             this.OpenBookToolStripMenuItem.BackColor = System.Drawing.Color.BurlyWood;
             this.OpenBookToolStripMenuItem.Name = "OpenBookToolStripMenuItem";
-            this.OpenBookToolStripMenuItem.Size = new System.Drawing.Size(253, 26);
+            this.OpenBookToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.OpenBookToolStripMenuItem.Text = "Открыть книгу";
             this.OpenBookToolStripMenuItem.Click += new System.EventHandler(this.OpenBookToolStripMenuItem_Click);
-            // 
-            // OpenBookEditorToolStripMenuItem
-            // 
-            this.OpenBookEditorToolStripMenuItem.BackColor = System.Drawing.Color.BurlyWood;
-            this.OpenBookEditorToolStripMenuItem.Name = "OpenBookEditorToolStripMenuItem";
-            this.OpenBookEditorToolStripMenuItem.Size = new System.Drawing.Size(253, 26);
-            this.OpenBookEditorToolStripMenuItem.Text = "Открыть редактор книг";
-            this.OpenBookEditorToolStripMenuItem.Click += new System.EventHandler(this.OpenBookEditorToolStripMenuItem_Click);
             // 
             // параметрыToolStripMenuItem
             // 
@@ -211,6 +201,5 @@
         private ToolStripMenuItem OpenFontParametersToolStripMenuItem;
         private OpenFileDialog OpenBookDialog;
         private FontDialog fontDialog;
-        private ToolStripMenuItem OpenBookEditorToolStripMenuItem;
     }
 }

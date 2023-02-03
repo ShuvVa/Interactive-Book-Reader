@@ -7,7 +7,7 @@ using System.Text;
 namespace Interactive_Book_Namespace
 {
     // Модификация шифра Вижинера, шифрующая сообщения в пределах 95 символов (ASCII - [32;126])
-    internal class Viginer_95
+    public class Viginer_95
     {
         private string Message; // Переменная, содержащая в себе принимаемое/передаваемое сообщение
 
