@@ -7,12 +7,12 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <StartupObject>Interactive_Book_Editor.Program</StartupObject>
-    <ApplicationIcon>Scroll icon.ico</ApplicationIcon>
+    <ApplicationIcon>Scroll with feather icon.ico</ApplicationIcon>
     <UseWindowsForms>True</UseWindowsForms>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="Scroll icon.ico" />
+    <Content Include="Scroll with feather icon.ico" />
   </ItemGroup>
 
   <ItemGroup>
