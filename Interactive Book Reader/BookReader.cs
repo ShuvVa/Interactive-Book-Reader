@@ -3,7 +3,7 @@
 using System.Text.Json;
 //using System.Threading.Tasks;
 
-namespace Interactive_Book_Reader
+namespace Interactive_Book_Namespace
 {
     public partial class BookReader : Form
     {

@@ -1,62 +1,62 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Interactive_Book_Reader.Chapter">
+  <Class Name="Interactive_Book_Namespace.Chapter">
     <Position X="7.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAgAAAAA=</HashCode>
       <FileName>Book.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Interactive_Book_Reader.Book">
+  <Class Name="Interactive_Book_Namespace.Book">
     <Position X="8.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAQAACAAAAAIAAAAA=</HashCode>
       <FileName>Book.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Interactive_Book_Reader.BookEditor">
+  <Class Name="Interactive_Book_Namespace.BookEditor">
     <Position X="24.75" Y="0.5" Width="3.25" />
     <TypeIdentifier>
       <HashCode>hgBSIggQAWhsACLhgoDQDQICLAAkjCagAcMCEggIoMY=</HashCode>
       <FileName>BookEditor.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Interactive_Book_Reader.BookReader">
+  <Class Name="Interactive_Book_Namespace.BookReader">
     <Position X="21.5" Y="0.5" Width="3.25" />
     <TypeIdentifier>
       <HashCode>BAAAAAQAACAAIAAgACKCAkAKACAIAAIACQIBAjAAIIA=</HashCode>
       <FileName>BookReader.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Interactive_Book_Reader.ChangeChapter">
+  <Class Name="Interactive_Book_Namespace.ChangeChapter">
     <Position X="12.5" Y="0.5" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAIACAEAAAAAICAAAACACAAACAAAAAAhAAAAAA=</HashCode>
       <FileName>ChangeChapter.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Interactive_Book_Reader.DeleteChapter">
+  <Class Name="Interactive_Book_Namespace.DeleteChapter">
     <Position X="18.25" Y="0.5" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAgCACAFAAAAKAAAASACEAEiAAAAAAAAgAAAA=</HashCode>
       <FileName>DeleteChapter.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Interactive_Book_Reader.PasswordCheck">
+  <Class Name="Interactive_Book_Namespace.PasswordCheck">
     <Position X="15.75" Y="0.5" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAICCEAAAAAACAEAACAEACAAAAAgBAABAAAAA=</HashCode>
       <FileName>PasswordCheck.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Interactive_Book_Reader.Program">
+  <Class Name="Interactive_Book_Namespace.Program">
     <Position X="5.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Interactive_Book_Reader.Viginer_95">
+  <Class Name="Interactive_Book_Namespace.Viginer_95">
     <Position X="10.25" Y="0.5" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AQAAAAAAAAAAAAQQEAAAAAAAAAAAAAACIAABIAAAAAA=</HashCode>

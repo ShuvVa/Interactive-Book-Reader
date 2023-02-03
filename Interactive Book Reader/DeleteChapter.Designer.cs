@@ -1,4 +1,4 @@
-﻿namespace Interactive_Book_Reader
+﻿namespace Interactive_Book_Namespace
 {
     partial class DeleteChapter
     {

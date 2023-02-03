@@ -1,5 +1,5 @@
 //using System.Reflection;
-namespace Interactive_Book_Reader
+namespace Interactive_Book_Namespace
 {
     internal static class Program
     {

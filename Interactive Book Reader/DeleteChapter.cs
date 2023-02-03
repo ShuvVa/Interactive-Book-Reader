@@ -8,7 +8,7 @@
 //using System.Threading.Tasks;
 //using System.Windows.Forms;
 
-namespace Interactive_Book_Reader
+namespace Interactive_Book_Namespace
 {
     public partial class DeleteChapter : Form
     {

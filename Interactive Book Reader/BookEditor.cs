@@ -10,7 +10,7 @@ using System.Text.Json;
 //using System.Windows.Forms;
 
 
-namespace Interactive_Book_Reader
+namespace Interactive_Book_Namespace
 {
     public partial class BookEditor : Form
     {

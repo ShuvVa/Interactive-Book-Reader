@@ -7,7 +7,7 @@
 //using System.Threading.Tasks;
 
 
-namespace Interactive_Book_Reader
+namespace Interactive_Book_Namespace
 {
     [Serializable]
     public class Chapter
