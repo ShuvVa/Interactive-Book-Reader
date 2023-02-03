@@ -233,11 +233,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PasswordSetupLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.PasswordSetupLabel.Font = new System.Drawing.Font("Courier New", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.PasswordSetupLabel.Location = new System.Drawing.Point(34, 349);
+            this.PasswordSetupLabel.Location = new System.Drawing.Point(34, 339);
             this.PasswordSetupLabel.Margin = new System.Windows.Forms.Padding(10);
             this.PasswordSetupLabel.Name = "PasswordSetupLabel";
             this.PasswordSetupLabel.Padding = new System.Windows.Forms.Padding(10);
-            this.PasswordSetupLabel.Size = new System.Drawing.Size(934, 54);
+            this.PasswordSetupLabel.Size = new System.Drawing.Size(934, 64);
             this.PasswordSetupLabel.TabIndex = 13;
             this.PasswordSetupLabel.Text = "Установка пароля для книги";
             this.PasswordSetupLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -410,7 +410,7 @@
             this.ChapterIDLabel.AutoSize = true;
             this.ChapterIDLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.ChapterIDLabel.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.ChapterIDLabel.Location = new System.Drawing.Point(312, 72);
+            this.ChapterIDLabel.Location = new System.Drawing.Point(313, 142);
             this.ChapterIDLabel.Margin = new System.Windows.Forms.Padding(3, 0, 3, 30);
             this.ChapterIDLabel.Name = "ChapterIDLabel";
             this.ChapterIDLabel.Padding = new System.Windows.Forms.Padding(30, 5, 30, 5);
@@ -422,10 +422,10 @@
             // AllowEditChapterID
             // 
             this.AllowEditChapterID.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.AllowEditChapterID.Location = new System.Drawing.Point(362, 212);
+            this.AllowEditChapterID.Location = new System.Drawing.Point(6, 611);
             this.AllowEditChapterID.Margin = new System.Windows.Forms.Padding(3, 3, 3, 40);
             this.AllowEditChapterID.Name = "AllowEditChapterID";
-            this.AllowEditChapterID.Size = new System.Drawing.Size(252, 31);
+            this.AllowEditChapterID.Size = new System.Drawing.Size(252, 41);
             this.AllowEditChapterID.TabIndex = 1;
             this.AllowEditChapterID.Text = "Редактировать ID текущей главы";
             this.AllowEditChapterID.UseVisualStyleBackColor = true;
@@ -433,11 +433,10 @@
             // 
             // ChapterIDEdit
             // 
-            this.ChapterIDEdit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ChapterIDEdit.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ChapterIDEdit.BackColor = System.Drawing.SystemColors.Window;
             this.ChapterIDEdit.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ChapterIDEdit.Location = new System.Drawing.Point(362, 148);
+            this.ChapterIDEdit.Location = new System.Drawing.Point(362, 218);
             this.ChapterIDEdit.Margin = new System.Windows.Forms.Padding(3, 3, 3, 30);
             this.ChapterIDEdit.Maximum = new decimal(new int[] {
             998,
@@ -621,11 +620,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.VariantsOfStoryDevelopmentLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.VariantsOfStoryDevelopmentLabel.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.VariantsOfStoryDevelopmentLabel.Location = new System.Drawing.Point(28, 27);
+            this.VariantsOfStoryDevelopmentLabel.Location = new System.Drawing.Point(28, 22);
             this.VariantsOfStoryDevelopmentLabel.Margin = new System.Windows.Forms.Padding(5);
             this.VariantsOfStoryDevelopmentLabel.Name = "VariantsOfStoryDevelopmentLabel";
             this.VariantsOfStoryDevelopmentLabel.Padding = new System.Windows.Forms.Padding(5);
-            this.VariantsOfStoryDevelopmentLabel.Size = new System.Drawing.Size(942, 43);
+            this.VariantsOfStoryDevelopmentLabel.Size = new System.Drawing.Size(942, 64);
             this.VariantsOfStoryDevelopmentLabel.TabIndex = 12;
             this.VariantsOfStoryDevelopmentLabel.Text = "Варианты развития сюжета";
             this.VariantsOfStoryDevelopmentLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
