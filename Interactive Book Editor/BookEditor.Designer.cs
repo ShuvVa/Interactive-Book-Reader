@@ -171,14 +171,14 @@
             // 
             // OpenBookDialog
             // 
-            this.OpenBookDialog.Filter = "Файл интерактивной книги (*.ibr)|*.ibr|Текстовый документ (*.txt)|*.txt|Все файлы" +
+            this.OpenBookDialog.Filter = "Файл интерактивной книги (*.isb)|*.isb|Текстовый документ (*.txt)|*.txt|Все файлы" +
     " (*.*)|*.*";
             this.OpenBookDialog.Title = "Открыть книгу";
             // 
             // SaveBookDialog
             // 
             this.SaveBookDialog.DefaultExt = "ibr";
-            this.SaveBookDialog.Filter = "Файл интерактивной книги (*.ibr)|*.ibr|Текстовый документ (*.txt)|*.txt|Все файлы" +
+            this.SaveBookDialog.Filter = "Файл интерактивной книги (*.isb)|*.isb|Текстовый документ (*.txt)|*.txt|Все файлы" +
     " (*.*)|*.*";
             // 
             // IntercativeBookPropperties
