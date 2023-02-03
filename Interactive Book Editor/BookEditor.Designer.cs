@@ -55,6 +55,7 @@
             this.BookLabel = new System.Windows.Forms.Label();
             this.BookLabelEditor = new System.Windows.Forms.TextBox();
             this.ChapterProppertiesPage = new System.Windows.Forms.TabPage();
+            this.ChapterIDShow = new System.Windows.Forms.TextBox();
             this.VariantNumberCounter = new System.Windows.Forms.NumericUpDown();
             this.ChapterPropperties_SaveChangesButton = new System.Windows.Forms.Button();
             this.VariantCountLabel = new System.Windows.Forms.Label();
@@ -149,7 +150,7 @@
             // 
             this.AddChapterToolStripMenuItem.BackColor = System.Drawing.Color.BurlyWood;
             this.AddChapterToolStripMenuItem.Name = "AddChapterToolStripMenuItem";
-            this.AddChapterToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
+            this.AddChapterToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.AddChapterToolStripMenuItem.Text = "Добавить";
             this.AddChapterToolStripMenuItem.Click += new System.EventHandler(this.AddChapterToolStripMenuItem_Click);
             // 
@@ -157,7 +158,7 @@
             // 
             this.SwitchChapterToolStripMenuItem.BackColor = System.Drawing.Color.BurlyWood;
             this.SwitchChapterToolStripMenuItem.Name = "SwitchChapterToolStripMenuItem";
-            this.SwitchChapterToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
+            this.SwitchChapterToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.SwitchChapterToolStripMenuItem.Text = "Переключиться";
             this.SwitchChapterToolStripMenuItem.Click += new System.EventHandler(this.SwitchChapterToolStripMenuItem_Click);
             // 
@@ -165,7 +166,7 @@
             // 
             this.DeleteChapterToolStripMenuItem.BackColor = System.Drawing.Color.BurlyWood;
             this.DeleteChapterToolStripMenuItem.Name = "DeleteChapterToolStripMenuItem";
-            this.DeleteChapterToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
+            this.DeleteChapterToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.DeleteChapterToolStripMenuItem.Text = "Удалить";
             this.DeleteChapterToolStripMenuItem.Click += new System.EventHandler(this.DeleteChapterToolStripMenuItem_Click);
             // 
@@ -326,6 +327,7 @@
             // ChapterProppertiesPage
             // 
             this.ChapterProppertiesPage.BackColor = System.Drawing.Color.PapayaWhip;
+            this.ChapterProppertiesPage.Controls.Add(this.ChapterIDShow);
             this.ChapterProppertiesPage.Controls.Add(this.VariantNumberCounter);
             this.ChapterProppertiesPage.Controls.Add(this.ChapterPropperties_SaveChangesButton);
             this.ChapterProppertiesPage.Controls.Add(this.VariantCountLabel);
@@ -339,6 +341,18 @@
             this.ChapterProppertiesPage.Size = new System.Drawing.Size(998, 660);
             this.ChapterProppertiesPage.TabIndex = 1;
             this.ChapterProppertiesPage.Text = "Настройки главы";
+            // 
+            // ChapterIDShow
+            // 
+            this.ChapterIDShow.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ChapterIDShow.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ChapterIDShow.Location = new System.Drawing.Point(362, 218);
+            this.ChapterIDShow.Name = "ChapterIDShow";
+            this.ChapterIDShow.ReadOnly = true;
+            this.ChapterIDShow.Size = new System.Drawing.Size(252, 31);
+            this.ChapterIDShow.TabIndex = 11;
+            this.ChapterIDShow.Text = "0";
+            this.ChapterIDShow.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // VariantNumberCounter
             // 
@@ -704,5 +718,6 @@
         private DataGridViewTextBoxColumn Grid_VariantNumber;
         private DataGridViewTextBoxColumn Grid_VariantText;
         private DataGridViewTextBoxColumn Grid_NextChapterId;
+        private TextBox ChapterIDShow;
     }
 }

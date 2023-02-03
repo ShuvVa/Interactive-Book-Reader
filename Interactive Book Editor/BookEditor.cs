@@ -65,6 +65,7 @@ namespace Interactive_Book_Editor
         {
             //  Заполнение ChapterProppertiesPage
             ChapterIDEdit.Value = book_editable.Chapters[NewCurrentChapter].ChapterId;
+            ChapterIDShow.Text = book_editable.Chapters[NewCurrentChapter].ChapterId.ToString();
             VariantNumberCounter.Value = book_editable.Chapters[NewCurrentChapter].ChapterVariants.Count;
             current_chapter = NewCurrentChapter;
 
@@ -119,8 +120,8 @@ namespace Interactive_Book_Editor
                     MessageBoxIcon.Exclamation,
                     MessageBoxDefaultButton.Button1
             );
-            if (result == DialogResult.Yes) ChapterIDEdit.Visible = true;
-            else ChapterIDEdit.Visible = false;
+            if (result == DialogResult.Yes) { ChapterIDEdit.Visible = true; ChapterIDShow.Visible = false; }
+            else { ChapterIDEdit.Visible = false; ChapterIDShow.Visible = true; }
         }
 
         private void OpenBookToolStripMenuItem_Click(object sender, EventArgs e)
@@ -512,7 +513,7 @@ namespace Interactive_Book_Editor
         {
             for (int i = 0; i < VariantsGrid.RowCount; i++)
             {
-                for (int j = 0; j < VariantsGrid.ColumnCount; j++)
+                for (int j = 0; j < VariantsGrid.RowCount; j++)
                 {
                     if ((VariantsGrid[1, i].Value.ToString() == VariantsGrid[1, j].Value.ToString()) && (i != j))
                         return true;
