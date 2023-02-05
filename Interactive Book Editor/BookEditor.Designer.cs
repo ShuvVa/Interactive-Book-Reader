@@ -58,7 +58,6 @@
             this.ChapterIDShow = new System.Windows.Forms.TextBox();
             this.VariantNumberCounter = new System.Windows.Forms.NumericUpDown();
             this.ChapterPropperties_SaveChangesButton = new System.Windows.Forms.Button();
-            this.VariantCountLabel = new System.Windows.Forms.Label();
             this.DictionaryLabel = new System.Windows.Forms.Label();
             this.ChapterIDLabel = new System.Windows.Forms.Label();
             this.AllowEditChapterID = new System.Windows.Forms.Button();
@@ -216,12 +215,13 @@
             // 
             // PasswordChecking
             // 
-            this.PasswordChecking.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.PasswordChecking.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PasswordChecking.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PasswordChecking.Location = new System.Drawing.Point(181, 465);
             this.PasswordChecking.MaxLength = 200;
             this.PasswordChecking.Name = "PasswordChecking";
-            this.PasswordChecking.PlaceholderText = "Подтверждение пароля";
+            this.PasswordChecking.PlaceholderText = "Введите подтверждение пароля";
             this.PasswordChecking.Size = new System.Drawing.Size(661, 43);
             this.PasswordChecking.TabIndex = 14;
             this.PasswordChecking.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -229,9 +229,10 @@
             // 
             // PasswordSetupLabel
             // 
-            this.PasswordSetupLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.PasswordSetupLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PasswordSetupLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.PasswordSetupLabel.Font = new System.Drawing.Font("Courier New", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.PasswordSetupLabel.Font = new System.Drawing.Font("Courier New", 16.6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.PasswordSetupLabel.Location = new System.Drawing.Point(34, 339);
             this.PasswordSetupLabel.Margin = new System.Windows.Forms.Padding(10);
             this.PasswordSetupLabel.Name = "PasswordSetupLabel";
@@ -243,12 +244,13 @@
             // 
             // PasswordSetBox
             // 
-            this.PasswordSetBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.PasswordSetBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PasswordSetBox.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PasswordSetBox.Location = new System.Drawing.Point(181, 416);
             this.PasswordSetBox.MaxLength = 200;
             this.PasswordSetBox.Name = "PasswordSetBox";
-            this.PasswordSetBox.PlaceholderText = "Пароль";
+            this.PasswordSetBox.PlaceholderText = "Введите пароль";
             this.PasswordSetBox.Size = new System.Drawing.Size(661, 43);
             this.PasswordSetBox.TabIndex = 12;
             this.PasswordSetBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -267,9 +269,10 @@
             // 
             // AuthorLabel
             // 
-            this.AuthorLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.AuthorLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.AuthorLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.AuthorLabel.Font = new System.Drawing.Font("Courier New", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.AuthorLabel.Font = new System.Drawing.Font("Courier New", 16.6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.AuthorLabel.Location = new System.Drawing.Point(34, 179);
             this.AuthorLabel.Margin = new System.Windows.Forms.Padding(10);
             this.AuthorLabel.Name = "AuthorLabel";
@@ -281,21 +284,23 @@
             // 
             // BookAuthorEditor
             // 
-            this.BookAuthorEditor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.BookAuthorEditor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.BookAuthorEditor.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BookAuthorEditor.Location = new System.Drawing.Point(181, 256);
             this.BookAuthorEditor.MaxLength = 200;
             this.BookAuthorEditor.Name = "BookAuthorEditor";
-            this.BookAuthorEditor.PlaceholderText = "Фамилия Имя/Ник";
+            this.BookAuthorEditor.PlaceholderText = "Введите ник автора";
             this.BookAuthorEditor.Size = new System.Drawing.Size(661, 43);
             this.BookAuthorEditor.TabIndex = 9;
             this.BookAuthorEditor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // BookLabel
             // 
-            this.BookLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.BookLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.BookLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.BookLabel.Font = new System.Drawing.Font("Courier New", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BookLabel.Font = new System.Drawing.Font("Courier New", 16.6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BookLabel.Location = new System.Drawing.Point(34, 25);
             this.BookLabel.Margin = new System.Windows.Forms.Padding(10);
             this.BookLabel.Name = "BookLabel";
@@ -307,12 +312,13 @@
             // 
             // BookLabelEditor
             // 
-            this.BookLabelEditor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.BookLabelEditor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.BookLabelEditor.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BookLabelEditor.Location = new System.Drawing.Point(181, 102);
             this.BookLabelEditor.MaxLength = 200;
             this.BookLabelEditor.Name = "BookLabelEditor";
-            this.BookLabelEditor.PlaceholderText = "Крутая книга";
+            this.BookLabelEditor.PlaceholderText = "Введите название книги";
             this.BookLabelEditor.Size = new System.Drawing.Size(661, 43);
             this.BookLabelEditor.TabIndex = 0;
             this.BookLabelEditor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -323,7 +329,6 @@
             this.ChapterPropertiesPage.Controls.Add(this.ChapterIDShow);
             this.ChapterPropertiesPage.Controls.Add(this.VariantNumberCounter);
             this.ChapterPropertiesPage.Controls.Add(this.ChapterPropperties_SaveChangesButton);
-            this.ChapterPropertiesPage.Controls.Add(this.VariantCountLabel);
             this.ChapterPropertiesPage.Controls.Add(this.DictionaryLabel);
             this.ChapterPropertiesPage.Controls.Add(this.ChapterIDLabel);
             this.ChapterPropertiesPage.Controls.Add(this.AllowEditChapterID);
@@ -337,9 +342,9 @@
             // 
             // ChapterIDShow
             // 
-            this.ChapterIDShow.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ChapterIDShow.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ChapterIDShow.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ChapterIDShow.Location = new System.Drawing.Point(362, 218);
+            this.ChapterIDShow.Location = new System.Drawing.Point(373, 104);
             this.ChapterIDShow.Name = "ChapterIDShow";
             this.ChapterIDShow.ReadOnly = true;
             this.ChapterIDShow.Size = new System.Drawing.Size(252, 31);
@@ -349,9 +354,9 @@
             // 
             // VariantNumberCounter
             // 
-            this.VariantNumberCounter.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.VariantNumberCounter.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.VariantNumberCounter.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.VariantNumberCounter.Location = new System.Drawing.Point(362, 403);
+            this.VariantNumberCounter.Location = new System.Drawing.Point(373, 257);
             this.VariantNumberCounter.Maximum = new decimal(new int[] {
             10,
             0,
@@ -383,45 +388,31 @@
             this.ChapterPropperties_SaveChangesButton.UseVisualStyleBackColor = true;
             this.ChapterPropperties_SaveChangesButton.Click += new System.EventHandler(this.ChapterPropperties_SaveChangesButton_Click);
             // 
-            // VariantCountLabel
-            // 
-            this.VariantCountLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.VariantCountLabel.AutoSize = true;
-            this.VariantCountLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.VariantCountLabel.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.VariantCountLabel.Location = new System.Drawing.Point(362, 346);
-            this.VariantCountLabel.Margin = new System.Windows.Forms.Padding(3, 0, 3, 30);
-            this.VariantCountLabel.Name = "VariantCountLabel";
-            this.VariantCountLabel.Size = new System.Drawing.Size(252, 24);
-            this.VariantCountLabel.TabIndex = 4;
-            this.VariantCountLabel.Text = "Количество вариантов";
-            this.VariantCountLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // DictionaryLabel
             // 
-            this.DictionaryLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.DictionaryLabel.AutoSize = true;
+            this.DictionaryLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.DictionaryLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.DictionaryLabel.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.DictionaryLabel.Location = new System.Drawing.Point(128, 283);
+            this.DictionaryLabel.Font = new System.Drawing.Font("Courier New", 16.6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DictionaryLabel.Location = new System.Drawing.Point(34, 179);
             this.DictionaryLabel.Margin = new System.Windows.Forms.Padding(3, 0, 3, 30);
             this.DictionaryLabel.Name = "DictionaryLabel";
-            this.DictionaryLabel.Size = new System.Drawing.Size(730, 33);
+            this.DictionaryLabel.Size = new System.Drawing.Size(934, 64);
             this.DictionaryLabel.TabIndex = 3;
-            this.DictionaryLabel.Text = "Настройка вариантов развития событий книги";
+            this.DictionaryLabel.Text = "Количество исходов главы";
             this.DictionaryLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ChapterIDLabel
             // 
-            this.ChapterIDLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ChapterIDLabel.AutoSize = true;
+            this.ChapterIDLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.ChapterIDLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ChapterIDLabel.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.ChapterIDLabel.Location = new System.Drawing.Point(313, 142);
+            this.ChapterIDLabel.Font = new System.Drawing.Font("Courier New", 16.6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ChapterIDLabel.Location = new System.Drawing.Point(34, 25);
             this.ChapterIDLabel.Margin = new System.Windows.Forms.Padding(3, 0, 3, 30);
             this.ChapterIDLabel.Name = "ChapterIDLabel";
             this.ChapterIDLabel.Padding = new System.Windows.Forms.Padding(30, 5, 30, 5);
-            this.ChapterIDLabel.Size = new System.Drawing.Size(348, 43);
+            this.ChapterIDLabel.Size = new System.Drawing.Size(934, 64);
             this.ChapterIDLabel.TabIndex = 2;
             this.ChapterIDLabel.Text = "ID текущей главы";
             this.ChapterIDLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -440,10 +431,10 @@
             // 
             // ChapterIDEdit
             // 
-            this.ChapterIDEdit.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ChapterIDEdit.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ChapterIDEdit.BackColor = System.Drawing.SystemColors.Window;
             this.ChapterIDEdit.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ChapterIDEdit.Location = new System.Drawing.Point(362, 218);
+            this.ChapterIDEdit.Location = new System.Drawing.Point(373, 104);
             this.ChapterIDEdit.Margin = new System.Windows.Forms.Padding(3, 3, 3, 30);
             this.ChapterIDEdit.Maximum = new decimal(new int[] {
             998,
@@ -491,7 +482,7 @@
             this.ChaperTextEditorLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ChaperTextEditorLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ChaperTextEditorLabel.Font = new System.Drawing.Font("Courier New", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ChaperTextEditorLabel.Font = new System.Drawing.Font("Courier New", 16.6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ChaperTextEditorLabel.Location = new System.Drawing.Point(10, 10);
             this.ChaperTextEditorLabel.Margin = new System.Windows.Forms.Padding(10);
             this.ChaperTextEditorLabel.Name = "ChaperTextEditorLabel";
@@ -626,7 +617,7 @@
             this.VariantsOfStoryDevelopmentLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.VariantsOfStoryDevelopmentLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.VariantsOfStoryDevelopmentLabel.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.VariantsOfStoryDevelopmentLabel.Font = new System.Drawing.Font("Courier New", 16.6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.VariantsOfStoryDevelopmentLabel.Location = new System.Drawing.Point(28, 22);
             this.VariantsOfStoryDevelopmentLabel.Margin = new System.Windows.Forms.Padding(5);
             this.VariantsOfStoryDevelopmentLabel.Name = "VariantsOfStoryDevelopmentLabel";
@@ -696,7 +687,6 @@
         private Label ChapterIDLabel;
         private Button AllowEditChapterID;
         private NumericUpDown ChapterIDEdit;
-        private Label VariantCountLabel;
         private Button ChapterPropperties_SaveChangesButton;
         private Button BookPropperties_SaveChangesButton;
         private NumericUpDown VariantNumberCounter;

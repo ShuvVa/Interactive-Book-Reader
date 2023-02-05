@@ -39,7 +39,7 @@
             // 
             // ChangeChapter_AcceptChangesButton
             // 
-            this.ChangeChapter_AcceptChangesButton.Location = new System.Drawing.Point(129, 349);
+            this.ChangeChapter_AcceptChangesButton.Location = new System.Drawing.Point(134, 206);
             this.ChangeChapter_AcceptChangesButton.Margin = new System.Windows.Forms.Padding(3, 3, 3, 40);
             this.ChangeChapter_AcceptChangesButton.Name = "ChangeChapter_AcceptChangesButton";
             this.ChangeChapter_AcceptChangesButton.Size = new System.Drawing.Size(132, 37);
@@ -54,7 +54,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.DeleteChapterLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.DeleteChapterLabel.Font = new System.Drawing.Font("Courier New", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.DeleteChapterLabel.Location = new System.Drawing.Point(33, 93);
+            this.DeleteChapterLabel.Location = new System.Drawing.Point(33, 19);
             this.DeleteChapterLabel.Margin = new System.Windows.Forms.Padding(10);
             this.DeleteChapterLabel.Name = "DeleteChapterLabel";
             this.DeleteChapterLabel.Padding = new System.Windows.Forms.Padding(10);
@@ -67,7 +67,7 @@
             // 
             this.CurrentIDRadioButton.AutoSize = true;
             this.CurrentIDRadioButton.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CurrentIDRadioButton.Location = new System.Drawing.Point(33, 212);
+            this.CurrentIDRadioButton.Location = new System.Drawing.Point(33, 115);
             this.CurrentIDRadioButton.Name = "CurrentIDRadioButton";
             this.CurrentIDRadioButton.Size = new System.Drawing.Size(150, 24);
             this.CurrentIDRadioButton.TabIndex = 18;
@@ -80,7 +80,7 @@
             // 
             this.VariousIDRadioButton.AutoSize = true;
             this.VariousIDRadioButton.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.VariousIDRadioButton.Location = new System.Drawing.Point(33, 256);
+            this.VariousIDRadioButton.Location = new System.Drawing.Point(33, 159);
             this.VariousIDRadioButton.Name = "VariousIDRadioButton";
             this.VariousIDRadioButton.Size = new System.Drawing.Size(170, 24);
             this.VariousIDRadioButton.TabIndex = 19;
@@ -91,7 +91,7 @@
             // 
             // CurrentIDBox
             // 
-            this.CurrentIDBox.Location = new System.Drawing.Point(263, 209);
+            this.CurrentIDBox.Location = new System.Drawing.Point(263, 112);
             this.CurrentIDBox.MaxLength = 4;
             this.CurrentIDBox.Name = "CurrentIDBox";
             this.CurrentIDBox.ReadOnly = true;
@@ -101,7 +101,7 @@
             // VariousIDComboBox
             // 
             this.VariousIDComboBox.FormattingEnabled = true;
-            this.VariousIDComboBox.Location = new System.Drawing.Point(263, 252);
+            this.VariousIDComboBox.Location = new System.Drawing.Point(263, 155);
             this.VariousIDComboBox.Name = "VariousIDComboBox";
             this.VariousIDComboBox.Size = new System.Drawing.Size(85, 28);
             this.VariousIDComboBox.TabIndex = 21;
@@ -111,7 +111,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PapayaWhip;
-            this.ClientSize = new System.Drawing.Size(382, 450);
+            this.ClientSize = new System.Drawing.Size(382, 253);
             this.Controls.Add(this.VariousIDComboBox);
             this.Controls.Add(this.CurrentIDBox);
             this.Controls.Add(this.VariousIDRadioButton);

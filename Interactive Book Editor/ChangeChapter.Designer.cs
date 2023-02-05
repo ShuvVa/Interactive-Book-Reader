@@ -37,7 +37,7 @@
             // ChangeChapter_ChapterIDComboBox
             // 
             this.ChangeChapter_ChapterIDComboBox.FormattingEnabled = true;
-            this.ChangeChapter_ChapterIDComboBox.Location = new System.Drawing.Point(19, 219);
+            this.ChangeChapter_ChapterIDComboBox.Location = new System.Drawing.Point(19, 152);
             this.ChangeChapter_ChapterIDComboBox.Name = "ChangeChapter_ChapterIDComboBox";
             this.ChangeChapter_ChapterIDComboBox.Size = new System.Drawing.Size(344, 28);
             this.ChangeChapter_ChapterIDComboBox.TabIndex = 0;
@@ -48,7 +48,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ChangeChapterLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.ChangeChapterLabel.Font = new System.Drawing.Font("Courier New", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.ChangeChapterLabel.Location = new System.Drawing.Point(19, 86);
+            this.ChangeChapterLabel.Location = new System.Drawing.Point(19, 19);
             this.ChangeChapterLabel.Margin = new System.Windows.Forms.Padding(10);
             this.ChangeChapterLabel.Name = "ChangeChapterLabel";
             this.ChangeChapterLabel.Padding = new System.Windows.Forms.Padding(10);
@@ -59,7 +59,7 @@
             // 
             // ChangeChapter_AcceptChangesButton
             // 
-            this.ChangeChapter_AcceptChangesButton.Location = new System.Drawing.Point(125, 367);
+            this.ChangeChapter_AcceptChangesButton.Location = new System.Drawing.Point(125, 267);
             this.ChangeChapter_AcceptChangesButton.Margin = new System.Windows.Forms.Padding(3, 3, 3, 40);
             this.ChangeChapter_AcceptChangesButton.Name = "ChangeChapter_AcceptChangesButton";
             this.ChangeChapter_AcceptChangesButton.Size = new System.Drawing.Size(132, 37);
@@ -73,7 +73,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PapayaWhip;
-            this.ClientSize = new System.Drawing.Size(382, 453);
+            this.ClientSize = new System.Drawing.Size(382, 353);
             this.Controls.Add(this.ChangeChapter_AcceptChangesButton);
             this.Controls.Add(this.ChangeChapterLabel);
             this.Controls.Add(this.ChangeChapter_ChapterIDComboBox);
