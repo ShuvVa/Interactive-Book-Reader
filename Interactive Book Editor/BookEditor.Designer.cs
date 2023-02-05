@@ -34,18 +34,18 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BookEditor));
             this.BookEditorStrip = new System.Windows.Forms.MenuStrip();
-            this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.FileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SaveBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OpenBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CreateNewBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.главыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ChaptersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AddChapterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SwitchChapterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.DeleteChapterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OpenBookDialog = new System.Windows.Forms.OpenFileDialog();
             this.SaveBookDialog = new System.Windows.Forms.SaveFileDialog();
             this.IntercativeBookPropperties = new System.Windows.Forms.TabControl();
-            this.BookProppertiesPage = new System.Windows.Forms.TabPage();
+            this.BookPropertiesPage = new System.Windows.Forms.TabPage();
             this.PasswordChecking = new System.Windows.Forms.TextBox();
             this.PasswordSetupLabel = new System.Windows.Forms.Label();
             this.PasswordSetBox = new System.Windows.Forms.TextBox();
@@ -54,7 +54,7 @@
             this.BookAuthorEditor = new System.Windows.Forms.TextBox();
             this.BookLabel = new System.Windows.Forms.Label();
             this.BookLabelEditor = new System.Windows.Forms.TextBox();
-            this.ChapterProppertiesPage = new System.Windows.Forms.TabPage();
+            this.ChapterPropertiesPage = new System.Windows.Forms.TabPage();
             this.ChapterIDShow = new System.Windows.Forms.TextBox();
             this.VariantNumberCounter = new System.Windows.Forms.NumericUpDown();
             this.ChapterPropperties_SaveChangesButton = new System.Windows.Forms.Button();
@@ -63,11 +63,11 @@
             this.ChapterIDLabel = new System.Windows.Forms.Label();
             this.AllowEditChapterID = new System.Windows.Forms.Button();
             this.ChapterIDEdit = new System.Windows.Forms.NumericUpDown();
-            this.ChapterTextProppertiesTab = new System.Windows.Forms.TabPage();
+            this.ChapterTextPropertiesTab = new System.Windows.Forms.TabPage();
             this.SaveChapterText = new System.Windows.Forms.Button();
             this.ChaperTextEditorLabel = new System.Windows.Forms.Label();
             this.ChapterText = new System.Windows.Forms.RichTextBox();
-            this.VariantsEditorTab = new System.Windows.Forms.TabPage();
+            this.ChapterOutcomePropertiesTab = new System.Windows.Forms.TabPage();
             this.VariantsGridSaveChangesButton = new System.Windows.Forms.Button();
             this.VariantsGrid = new System.Windows.Forms.DataGridView();
             this.Grid_VariantNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -77,12 +77,12 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.BookEditorStrip.SuspendLayout();
             this.IntercativeBookPropperties.SuspendLayout();
-            this.BookProppertiesPage.SuspendLayout();
-            this.ChapterProppertiesPage.SuspendLayout();
+            this.BookPropertiesPage.SuspendLayout();
+            this.ChapterPropertiesPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.VariantNumberCounter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChapterIDEdit)).BeginInit();
-            this.ChapterTextProppertiesTab.SuspendLayout();
-            this.VariantsEditorTab.SuspendLayout();
+            this.ChapterTextPropertiesTab.SuspendLayout();
+            this.ChapterOutcomePropertiesTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.VariantsGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,8 +91,8 @@
             this.BookEditorStrip.BackColor = System.Drawing.Color.BurlyWood;
             this.BookEditorStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.BookEditorStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.файлToolStripMenuItem,
-            this.главыToolStripMenuItem});
+            this.FileToolStripMenuItem,
+            this.ChaptersToolStripMenuItem});
             this.BookEditorStrip.Location = new System.Drawing.Point(0, 0);
             this.BookEditorStrip.Margin = new System.Windows.Forms.Padding(0, 0, 0, 15);
             this.BookEditorStrip.Name = "BookEditorStrip";
@@ -100,16 +100,16 @@
             this.BookEditorStrip.TabIndex = 0;
             this.BookEditorStrip.Text = "menuStrip1";
             // 
-            // файлToolStripMenuItem
+            // FileToolStripMenuItem
             // 
-            this.файлToolStripMenuItem.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.файлToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.FileToolStripMenuItem.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.FileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.SaveBookToolStripMenuItem,
             this.OpenBookToolStripMenuItem,
             this.CreateNewBookToolStripMenuItem});
-            this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
-            this.файлToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
-            this.файлToolStripMenuItem.Text = "Файл";
+            this.FileToolStripMenuItem.Name = "FileToolStripMenuItem";
+            this.FileToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
+            this.FileToolStripMenuItem.Text = "Файл";
             // 
             // SaveBookToolStripMenuItem
             // 
@@ -135,22 +135,22 @@
             this.CreateNewBookToolStripMenuItem.Text = "Создать новую книгу";
             this.CreateNewBookToolStripMenuItem.Click += new System.EventHandler(this.CreateNewBookToolStripMenuItem_Click);
             // 
-            // главыToolStripMenuItem
+            // ChaptersToolStripMenuItem
             // 
-            this.главыToolStripMenuItem.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.главыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ChaptersToolStripMenuItem.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.ChaptersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.AddChapterToolStripMenuItem,
             this.SwitchChapterToolStripMenuItem,
             this.DeleteChapterToolStripMenuItem});
-            this.главыToolStripMenuItem.Name = "главыToolStripMenuItem";
-            this.главыToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
-            this.главыToolStripMenuItem.Text = "Главы";
+            this.ChaptersToolStripMenuItem.Name = "ChaptersToolStripMenuItem";
+            this.ChaptersToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
+            this.ChaptersToolStripMenuItem.Text = "Главы";
             // 
             // AddChapterToolStripMenuItem
             // 
             this.AddChapterToolStripMenuItem.BackColor = System.Drawing.Color.BurlyWood;
             this.AddChapterToolStripMenuItem.Name = "AddChapterToolStripMenuItem";
-            this.AddChapterToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.AddChapterToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
             this.AddChapterToolStripMenuItem.Text = "Добавить";
             this.AddChapterToolStripMenuItem.Click += new System.EventHandler(this.AddChapterToolStripMenuItem_Click);
             // 
@@ -158,7 +158,7 @@
             // 
             this.SwitchChapterToolStripMenuItem.BackColor = System.Drawing.Color.BurlyWood;
             this.SwitchChapterToolStripMenuItem.Name = "SwitchChapterToolStripMenuItem";
-            this.SwitchChapterToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.SwitchChapterToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
             this.SwitchChapterToolStripMenuItem.Text = "Переключиться";
             this.SwitchChapterToolStripMenuItem.Click += new System.EventHandler(this.SwitchChapterToolStripMenuItem_Click);
             // 
@@ -166,7 +166,7 @@
             // 
             this.DeleteChapterToolStripMenuItem.BackColor = System.Drawing.Color.BurlyWood;
             this.DeleteChapterToolStripMenuItem.Name = "DeleteChapterToolStripMenuItem";
-            this.DeleteChapterToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.DeleteChapterToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
             this.DeleteChapterToolStripMenuItem.Text = "Удалить";
             this.DeleteChapterToolStripMenuItem.Click += new System.EventHandler(this.DeleteChapterToolStripMenuItem_Click);
             // 
@@ -184,10 +184,10 @@
             // 
             // IntercativeBookPropperties
             // 
-            this.IntercativeBookPropperties.Controls.Add(this.BookProppertiesPage);
-            this.IntercativeBookPropperties.Controls.Add(this.ChapterProppertiesPage);
-            this.IntercativeBookPropperties.Controls.Add(this.ChapterTextProppertiesTab);
-            this.IntercativeBookPropperties.Controls.Add(this.VariantsEditorTab);
+            this.IntercativeBookPropperties.Controls.Add(this.BookPropertiesPage);
+            this.IntercativeBookPropperties.Controls.Add(this.ChapterPropertiesPage);
+            this.IntercativeBookPropperties.Controls.Add(this.ChapterTextPropertiesTab);
+            this.IntercativeBookPropperties.Controls.Add(this.ChapterOutcomePropertiesTab);
             this.IntercativeBookPropperties.Dock = System.Windows.Forms.DockStyle.Fill;
             this.IntercativeBookPropperties.Location = new System.Drawing.Point(0, 28);
             this.IntercativeBookPropperties.Multiline = true;
@@ -196,28 +196,27 @@
             this.IntercativeBookPropperties.Size = new System.Drawing.Size(1006, 693);
             this.IntercativeBookPropperties.TabIndex = 1;
             // 
-            // BookProppertiesPage
+            // BookPropertiesPage
             // 
-            this.BookProppertiesPage.BackColor = System.Drawing.Color.PapayaWhip;
-            this.BookProppertiesPage.Controls.Add(this.PasswordChecking);
-            this.BookProppertiesPage.Controls.Add(this.PasswordSetupLabel);
-            this.BookProppertiesPage.Controls.Add(this.PasswordSetBox);
-            this.BookProppertiesPage.Controls.Add(this.BookPropperties_SaveChangesButton);
-            this.BookProppertiesPage.Controls.Add(this.AuthorLabel);
-            this.BookProppertiesPage.Controls.Add(this.BookAuthorEditor);
-            this.BookProppertiesPage.Controls.Add(this.BookLabel);
-            this.BookProppertiesPage.Controls.Add(this.BookLabelEditor);
-            this.BookProppertiesPage.Location = new System.Drawing.Point(4, 29);
-            this.BookProppertiesPage.Name = "BookProppertiesPage";
-            this.BookProppertiesPage.Padding = new System.Windows.Forms.Padding(3);
-            this.BookProppertiesPage.Size = new System.Drawing.Size(998, 660);
-            this.BookProppertiesPage.TabIndex = 0;
-            this.BookProppertiesPage.Text = "Настройки книги";
+            this.BookPropertiesPage.BackColor = System.Drawing.Color.PapayaWhip;
+            this.BookPropertiesPage.Controls.Add(this.PasswordChecking);
+            this.BookPropertiesPage.Controls.Add(this.PasswordSetupLabel);
+            this.BookPropertiesPage.Controls.Add(this.PasswordSetBox);
+            this.BookPropertiesPage.Controls.Add(this.BookPropperties_SaveChangesButton);
+            this.BookPropertiesPage.Controls.Add(this.AuthorLabel);
+            this.BookPropertiesPage.Controls.Add(this.BookAuthorEditor);
+            this.BookPropertiesPage.Controls.Add(this.BookLabel);
+            this.BookPropertiesPage.Controls.Add(this.BookLabelEditor);
+            this.BookPropertiesPage.Location = new System.Drawing.Point(4, 29);
+            this.BookPropertiesPage.Name = "BookPropertiesPage";
+            this.BookPropertiesPage.Padding = new System.Windows.Forms.Padding(3);
+            this.BookPropertiesPage.Size = new System.Drawing.Size(998, 660);
+            this.BookPropertiesPage.TabIndex = 0;
+            this.BookPropertiesPage.Text = "Настройки книги";
             // 
             // PasswordChecking
             // 
-            this.PasswordChecking.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PasswordChecking.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.PasswordChecking.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PasswordChecking.Location = new System.Drawing.Point(181, 465);
             this.PasswordChecking.MaxLength = 200;
@@ -230,8 +229,7 @@
             // 
             // PasswordSetupLabel
             // 
-            this.PasswordSetupLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PasswordSetupLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.PasswordSetupLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.PasswordSetupLabel.Font = new System.Drawing.Font("Courier New", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.PasswordSetupLabel.Location = new System.Drawing.Point(34, 339);
@@ -245,8 +243,7 @@
             // 
             // PasswordSetBox
             // 
-            this.PasswordSetBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PasswordSetBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.PasswordSetBox.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PasswordSetBox.Location = new System.Drawing.Point(181, 416);
             this.PasswordSetBox.MaxLength = 200;
@@ -270,8 +267,7 @@
             // 
             // AuthorLabel
             // 
-            this.AuthorLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.AuthorLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.AuthorLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.AuthorLabel.Font = new System.Drawing.Font("Courier New", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.AuthorLabel.Location = new System.Drawing.Point(34, 179);
@@ -285,8 +281,7 @@
             // 
             // BookAuthorEditor
             // 
-            this.BookAuthorEditor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BookAuthorEditor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.BookAuthorEditor.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BookAuthorEditor.Location = new System.Drawing.Point(181, 256);
             this.BookAuthorEditor.MaxLength = 200;
@@ -298,8 +293,7 @@
             // 
             // BookLabel
             // 
-            this.BookLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BookLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.BookLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.BookLabel.Font = new System.Drawing.Font("Courier New", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BookLabel.Location = new System.Drawing.Point(34, 25);
@@ -313,8 +307,7 @@
             // 
             // BookLabelEditor
             // 
-            this.BookLabelEditor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BookLabelEditor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.BookLabelEditor.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BookLabelEditor.Location = new System.Drawing.Point(181, 102);
             this.BookLabelEditor.MaxLength = 200;
@@ -324,27 +317,27 @@
             this.BookLabelEditor.TabIndex = 0;
             this.BookLabelEditor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // ChapterProppertiesPage
+            // ChapterPropertiesPage
             // 
-            this.ChapterProppertiesPage.BackColor = System.Drawing.Color.PapayaWhip;
-            this.ChapterProppertiesPage.Controls.Add(this.ChapterIDShow);
-            this.ChapterProppertiesPage.Controls.Add(this.VariantNumberCounter);
-            this.ChapterProppertiesPage.Controls.Add(this.ChapterPropperties_SaveChangesButton);
-            this.ChapterProppertiesPage.Controls.Add(this.VariantCountLabel);
-            this.ChapterProppertiesPage.Controls.Add(this.DictionaryLabel);
-            this.ChapterProppertiesPage.Controls.Add(this.ChapterIDLabel);
-            this.ChapterProppertiesPage.Controls.Add(this.AllowEditChapterID);
-            this.ChapterProppertiesPage.Controls.Add(this.ChapterIDEdit);
-            this.ChapterProppertiesPage.Location = new System.Drawing.Point(4, 29);
-            this.ChapterProppertiesPage.Name = "ChapterProppertiesPage";
-            this.ChapterProppertiesPage.Padding = new System.Windows.Forms.Padding(3);
-            this.ChapterProppertiesPage.Size = new System.Drawing.Size(998, 660);
-            this.ChapterProppertiesPage.TabIndex = 1;
-            this.ChapterProppertiesPage.Text = "Настройки главы";
+            this.ChapterPropertiesPage.BackColor = System.Drawing.Color.PapayaWhip;
+            this.ChapterPropertiesPage.Controls.Add(this.ChapterIDShow);
+            this.ChapterPropertiesPage.Controls.Add(this.VariantNumberCounter);
+            this.ChapterPropertiesPage.Controls.Add(this.ChapterPropperties_SaveChangesButton);
+            this.ChapterPropertiesPage.Controls.Add(this.VariantCountLabel);
+            this.ChapterPropertiesPage.Controls.Add(this.DictionaryLabel);
+            this.ChapterPropertiesPage.Controls.Add(this.ChapterIDLabel);
+            this.ChapterPropertiesPage.Controls.Add(this.AllowEditChapterID);
+            this.ChapterPropertiesPage.Controls.Add(this.ChapterIDEdit);
+            this.ChapterPropertiesPage.Location = new System.Drawing.Point(4, 29);
+            this.ChapterPropertiesPage.Name = "ChapterPropertiesPage";
+            this.ChapterPropertiesPage.Padding = new System.Windows.Forms.Padding(3);
+            this.ChapterPropertiesPage.Size = new System.Drawing.Size(998, 660);
+            this.ChapterPropertiesPage.TabIndex = 1;
+            this.ChapterPropertiesPage.Text = "Настройки главы";
             // 
             // ChapterIDShow
             // 
-            this.ChapterIDShow.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ChapterIDShow.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ChapterIDShow.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ChapterIDShow.Location = new System.Drawing.Point(362, 218);
             this.ChapterIDShow.Name = "ChapterIDShow";
@@ -356,7 +349,7 @@
             // 
             // VariantNumberCounter
             // 
-            this.VariantNumberCounter.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.VariantNumberCounter.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.VariantNumberCounter.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.VariantNumberCounter.Location = new System.Drawing.Point(362, 403);
             this.VariantNumberCounter.Maximum = new decimal(new int[] {
@@ -392,7 +385,7 @@
             // 
             // VariantCountLabel
             // 
-            this.VariantCountLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.VariantCountLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.VariantCountLabel.AutoSize = true;
             this.VariantCountLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.VariantCountLabel.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -406,7 +399,7 @@
             // 
             // DictionaryLabel
             // 
-            this.DictionaryLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.DictionaryLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DictionaryLabel.AutoSize = true;
             this.DictionaryLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.DictionaryLabel.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -420,7 +413,7 @@
             // 
             // ChapterIDLabel
             // 
-            this.ChapterIDLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ChapterIDLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ChapterIDLabel.AutoSize = true;
             this.ChapterIDLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.ChapterIDLabel.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -435,7 +428,7 @@
             // 
             // AllowEditChapterID
             // 
-            this.AllowEditChapterID.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.AllowEditChapterID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.AllowEditChapterID.Location = new System.Drawing.Point(6, 611);
             this.AllowEditChapterID.Margin = new System.Windows.Forms.Padding(3, 3, 3, 40);
             this.AllowEditChapterID.Name = "AllowEditChapterID";
@@ -447,7 +440,7 @@
             // 
             // ChapterIDEdit
             // 
-            this.ChapterIDEdit.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ChapterIDEdit.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ChapterIDEdit.BackColor = System.Drawing.SystemColors.Window;
             this.ChapterIDEdit.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ChapterIDEdit.Location = new System.Drawing.Point(362, 218);
@@ -469,18 +462,18 @@
             this.ChapterIDEdit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.ChapterIDEdit.Visible = false;
             // 
-            // ChapterTextProppertiesTab
+            // ChapterTextPropertiesTab
             // 
-            this.ChapterTextProppertiesTab.BackColor = System.Drawing.Color.PapayaWhip;
-            this.ChapterTextProppertiesTab.Controls.Add(this.SaveChapterText);
-            this.ChapterTextProppertiesTab.Controls.Add(this.ChaperTextEditorLabel);
-            this.ChapterTextProppertiesTab.Controls.Add(this.ChapterText);
-            this.ChapterTextProppertiesTab.Location = new System.Drawing.Point(4, 29);
-            this.ChapterTextProppertiesTab.Name = "ChapterTextProppertiesTab";
-            this.ChapterTextProppertiesTab.Padding = new System.Windows.Forms.Padding(3);
-            this.ChapterTextProppertiesTab.Size = new System.Drawing.Size(998, 660);
-            this.ChapterTextProppertiesTab.TabIndex = 2;
-            this.ChapterTextProppertiesTab.Text = "Редактор текста главы";
+            this.ChapterTextPropertiesTab.BackColor = System.Drawing.Color.PapayaWhip;
+            this.ChapterTextPropertiesTab.Controls.Add(this.SaveChapterText);
+            this.ChapterTextPropertiesTab.Controls.Add(this.ChaperTextEditorLabel);
+            this.ChapterTextPropertiesTab.Controls.Add(this.ChapterText);
+            this.ChapterTextPropertiesTab.Location = new System.Drawing.Point(4, 29);
+            this.ChapterTextPropertiesTab.Name = "ChapterTextPropertiesTab";
+            this.ChapterTextPropertiesTab.Padding = new System.Windows.Forms.Padding(3);
+            this.ChapterTextPropertiesTab.Size = new System.Drawing.Size(998, 660);
+            this.ChapterTextPropertiesTab.TabIndex = 2;
+            this.ChapterTextPropertiesTab.Text = "Редактор текста главы";
             // 
             // SaveChapterText
             // 
@@ -522,18 +515,18 @@
             this.ChapterText.TabIndex = 6;
             this.ChapterText.Text = "Пожалуйста, откройте интерактивную книгу с помощью \"Файл\" -> \"Открыть книгу\".";
             // 
-            // VariantsEditorTab
+            // ChapterOutcomePropertiesTab
             // 
-            this.VariantsEditorTab.BackColor = System.Drawing.Color.PapayaWhip;
-            this.VariantsEditorTab.Controls.Add(this.VariantsGridSaveChangesButton);
-            this.VariantsEditorTab.Controls.Add(this.VariantsGrid);
-            this.VariantsEditorTab.Controls.Add(this.VariantsOfStoryDevelopmentLabel);
-            this.VariantsEditorTab.Location = new System.Drawing.Point(4, 29);
-            this.VariantsEditorTab.Name = "VariantsEditorTab";
-            this.VariantsEditorTab.Padding = new System.Windows.Forms.Padding(3);
-            this.VariantsEditorTab.Size = new System.Drawing.Size(998, 660);
-            this.VariantsEditorTab.TabIndex = 3;
-            this.VariantsEditorTab.Text = "Настройка вариантов развития сюжета";
+            this.ChapterOutcomePropertiesTab.BackColor = System.Drawing.Color.PapayaWhip;
+            this.ChapterOutcomePropertiesTab.Controls.Add(this.VariantsGridSaveChangesButton);
+            this.ChapterOutcomePropertiesTab.Controls.Add(this.VariantsGrid);
+            this.ChapterOutcomePropertiesTab.Controls.Add(this.VariantsOfStoryDevelopmentLabel);
+            this.ChapterOutcomePropertiesTab.Location = new System.Drawing.Point(4, 29);
+            this.ChapterOutcomePropertiesTab.Name = "ChapterOutcomePropertiesTab";
+            this.ChapterOutcomePropertiesTab.Padding = new System.Windows.Forms.Padding(3);
+            this.ChapterOutcomePropertiesTab.Size = new System.Drawing.Size(998, 660);
+            this.ChapterOutcomePropertiesTab.TabIndex = 3;
+            this.ChapterOutcomePropertiesTab.Text = "Настройка вариантов развития сюжета";
             // 
             // VariantsGridSaveChangesButton
             // 
@@ -661,14 +654,14 @@
             this.BookEditorStrip.ResumeLayout(false);
             this.BookEditorStrip.PerformLayout();
             this.IntercativeBookPropperties.ResumeLayout(false);
-            this.BookProppertiesPage.ResumeLayout(false);
-            this.BookProppertiesPage.PerformLayout();
-            this.ChapterProppertiesPage.ResumeLayout(false);
-            this.ChapterProppertiesPage.PerformLayout();
+            this.BookPropertiesPage.ResumeLayout(false);
+            this.BookPropertiesPage.PerformLayout();
+            this.ChapterPropertiesPage.ResumeLayout(false);
+            this.ChapterPropertiesPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.VariantNumberCounter)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChapterIDEdit)).EndInit();
-            this.ChapterTextProppertiesTab.ResumeLayout(false);
-            this.VariantsEditorTab.ResumeLayout(false);
+            this.ChapterTextPropertiesTab.ResumeLayout(false);
+            this.ChapterOutcomePropertiesTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.VariantsGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -678,19 +671,19 @@
         #endregion
 
         private MenuStrip BookEditorStrip;
-        private ToolStripMenuItem файлToolStripMenuItem;
+        private ToolStripMenuItem FileToolStripMenuItem;
         private ToolStripMenuItem OpenBookToolStripMenuItem;
         private ToolStripMenuItem SaveBookToolStripMenuItem;
-        private ToolStripMenuItem главыToolStripMenuItem;
+        private ToolStripMenuItem ChaptersToolStripMenuItem;
         private ToolStripMenuItem AddChapterToolStripMenuItem;
         private ToolStripMenuItem SwitchChapterToolStripMenuItem;
         private ToolStripMenuItem DeleteChapterToolStripMenuItem;
         private OpenFileDialog OpenBookDialog;
         private SaveFileDialog SaveBookDialog;
         private TabControl IntercativeBookPropperties;
-        private TabPage BookProppertiesPage;
-        private TabPage ChapterProppertiesPage;
-        private TabPage ChapterTextProppertiesTab;
+        private TabPage BookPropertiesPage;
+        private TabPage ChapterPropertiesPage;
+        private TabPage ChapterTextPropertiesTab;
         private RichTextBox ChapterText;
         private Label ChaperTextEditorLabel;
         private ToolStripMenuItem CreateNewBookToolStripMenuItem;
@@ -707,7 +700,7 @@
         private Button ChapterPropperties_SaveChangesButton;
         private Button BookPropperties_SaveChangesButton;
         private NumericUpDown VariantNumberCounter;
-        private TabPage VariantsEditorTab;
+        private TabPage ChapterOutcomePropertiesTab;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private DataGridView VariantsGrid;
         private Label VariantsOfStoryDevelopmentLabel;
