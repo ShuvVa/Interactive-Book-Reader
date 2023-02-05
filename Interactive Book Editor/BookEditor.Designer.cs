@@ -149,7 +149,7 @@
             // 
             this.AddChapterToolStripMenuItem.BackColor = System.Drawing.Color.BurlyWood;
             this.AddChapterToolStripMenuItem.Name = "AddChapterToolStripMenuItem";
-            this.AddChapterToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
+            this.AddChapterToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.AddChapterToolStripMenuItem.Text = "Добавить";
             this.AddChapterToolStripMenuItem.Click += new System.EventHandler(this.AddChapterToolStripMenuItem_Click);
             // 
@@ -157,7 +157,7 @@
             // 
             this.SwitchChapterToolStripMenuItem.BackColor = System.Drawing.Color.BurlyWood;
             this.SwitchChapterToolStripMenuItem.Name = "SwitchChapterToolStripMenuItem";
-            this.SwitchChapterToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
+            this.SwitchChapterToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.SwitchChapterToolStripMenuItem.Text = "Переключиться";
             this.SwitchChapterToolStripMenuItem.Click += new System.EventHandler(this.SwitchChapterToolStripMenuItem_Click);
             // 
@@ -165,7 +165,7 @@
             // 
             this.DeleteChapterToolStripMenuItem.BackColor = System.Drawing.Color.BurlyWood;
             this.DeleteChapterToolStripMenuItem.Name = "DeleteChapterToolStripMenuItem";
-            this.DeleteChapterToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
+            this.DeleteChapterToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.DeleteChapterToolStripMenuItem.Text = "Удалить";
             this.DeleteChapterToolStripMenuItem.Click += new System.EventHandler(this.DeleteChapterToolStripMenuItem_Click);
             // 
