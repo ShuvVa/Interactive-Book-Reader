@@ -26,8 +26,9 @@ namespace Interactive_Book_Editor
         public PasswordCheck(string _pswrd )
         {
             InitializeComponent();
-            Viginer_95 Decrypt = new (_pswrd);
-            book_password = Decrypt.Decrypt();
+            //Viginer_95 Decrypt = new (_pswrd);
+            //book_password = Decrypt.Decrypt();
+            book_password = _pswrd;
         }
 
         public bool GetPasswordsEqual()

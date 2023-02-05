@@ -153,8 +153,9 @@ namespace Interactive_Book_Editor
                 book_editable.Password = viginer_95.Encrypt();
             }
 
-            
-            
+            Viginer_95 Decrypt = new(temp_book.Password);
+            temp_book.Password = Decrypt.Decrypt();
+
             FileReader.Close();
 
             //  Вызов формы проверки пароля
@@ -326,7 +327,7 @@ namespace Interactive_Book_Editor
                 return;
 
             string filename = SaveBookDialog.FileName;
-            StreamWriter FileWriter = new StreamWriter(filename, true);
+            StreamWriter FileWriter = new StreamWriter(filename, false);
 
             Viginer_95 Encrypt = new(book_editable.Password);
             book_editable.Password = (Encrypt.Encrypt());
@@ -339,7 +340,7 @@ namespace Interactive_Book_Editor
 
         private void BookPropperties_SaveChangesButton_Click(object sender, EventArgs e)
         {
-            if (BookLabelEditor.Text ==null|| BookLabelEditor.Text == "")
+            if (BookLabelEditor.Text == null|| BookLabelEditor.Text == "")
             {
                 MessageBox.Show(
                     "Текстовое поле с названием книги пустое.",
