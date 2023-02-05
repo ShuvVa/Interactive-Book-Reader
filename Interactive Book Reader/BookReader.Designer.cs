@@ -34,9 +34,9 @@
             this.BookLabel = new System.Windows.Forms.Label();
             this.ChapterText = new System.Windows.Forms.RichTextBox();
             this.BookReaderStrip = new System.Windows.Forms.MenuStrip();
-            this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.FileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OpenBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.параметрыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.OptionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OpenFontParametersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OpenBookDialog = new System.Windows.Forms.OpenFileDialog();
             this.fontDialog = new System.Windows.Forms.FontDialog();
@@ -114,39 +114,39 @@
             this.BookReaderStrip.BackColor = System.Drawing.Color.BurlyWood;
             this.BookReaderStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.BookReaderStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.файлToolStripMenuItem,
-            this.параметрыToolStripMenuItem});
+            this.FileToolStripMenuItem,
+            this.OptionsToolStripMenuItem});
             this.BookReaderStrip.Location = new System.Drawing.Point(5, 0);
             this.BookReaderStrip.Name = "BookReaderStrip";
             this.BookReaderStrip.Size = new System.Drawing.Size(996, 28);
             this.BookReaderStrip.TabIndex = 6;
             this.BookReaderStrip.Text = "menuStrip1";
             // 
-            // файлToolStripMenuItem
+            // FileToolStripMenuItem
             // 
-            this.файлToolStripMenuItem.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.файлToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.FileToolStripMenuItem.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.FileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.OpenBookToolStripMenuItem});
-            this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
-            this.файлToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
-            this.файлToolStripMenuItem.Text = "Файл";
+            this.FileToolStripMenuItem.Name = "FileToolStripMenuItem";
+            this.FileToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
+            this.FileToolStripMenuItem.Text = "Файл";
             // 
             // OpenBookToolStripMenuItem
             // 
             this.OpenBookToolStripMenuItem.BackColor = System.Drawing.Color.BurlyWood;
             this.OpenBookToolStripMenuItem.Name = "OpenBookToolStripMenuItem";
-            this.OpenBookToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
+            this.OpenBookToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.OpenBookToolStripMenuItem.Text = "Открыть книгу";
             this.OpenBookToolStripMenuItem.Click += new System.EventHandler(this.OpenBookToolStripMenuItem_Click);
             // 
-            // параметрыToolStripMenuItem
+            // OptionsToolStripMenuItem
             // 
-            this.параметрыToolStripMenuItem.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.параметрыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.OptionsToolStripMenuItem.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.OptionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.OpenFontParametersToolStripMenuItem});
-            this.параметрыToolStripMenuItem.Name = "параметрыToolStripMenuItem";
-            this.параметрыToolStripMenuItem.Size = new System.Drawing.Size(104, 24);
-            this.параметрыToolStripMenuItem.Text = "Параметры";
+            this.OptionsToolStripMenuItem.Name = "OptionsToolStripMenuItem";
+            this.OptionsToolStripMenuItem.Size = new System.Drawing.Size(104, 24);
+            this.OptionsToolStripMenuItem.Text = "Параметры";
             // 
             // OpenFontParametersToolStripMenuItem
             // 
@@ -194,8 +194,8 @@
         private Label BookLabel;
         private RichTextBox ChapterText;
         private MenuStrip BookReaderStrip;
-        private ToolStripMenuItem файлToolStripMenuItem;
-        private ToolStripMenuItem параметрыToolStripMenuItem;
+        private ToolStripMenuItem FileToolStripMenuItem;
+        private ToolStripMenuItem OptionsToolStripMenuItem;
         private ToolStripMenuItem OpenBookToolStripMenuItem;
         private ToolStripMenuItem OpenFontParametersToolStripMenuItem;
         private OpenFileDialog OpenBookDialog;
