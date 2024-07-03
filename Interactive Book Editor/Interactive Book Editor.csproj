@@ -2,17 +2,36 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows7.0</TargetFramework>
-    <RootNamespace>Interactive_Book_Editor</RootNamespace>
+    <TargetFramework>net6.0-windows10.0.22621.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <StartupObject>Interactive_Book_Editor.Program</StartupObject>
     <ApplicationIcon>Scroll with feather icon.ico</ApplicationIcon>
     <UseWindowsForms>True</UseWindowsForms>
+    <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
+    <Title>$(AssemblyName)</Title>
+    <Description>Программа для чтения интерактивных книг.</Description>
+    <Copyright>© 2021, b3r8t3r. All rights reserved.</Copyright>
+    <Company />
+    <Authors>$(Authors)</Authors>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/b3r8t3r/Interactive-Book-Reader</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/b3r8t3r/Interactive-Book-Reader</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Interactive book</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
     <Content Include="Scroll with feather icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
@@ -24,6 +43,13 @@
     <Compile Update="ChangeChapter.cs" />
     <Compile Update="DeleteChapter.cs" />
     <Compile Update="PasswordCheck.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

@@ -1,12 +1,33 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net6.0-windows10.0.22621.0</TargetFramework>
     <RootNamespace>Interactive_Book_Namespace</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Authors>$(AssemblyName)</Authors>
-    <Copyright>Open Sourse</Copyright>
+    <Authors>$(Authors)</Authors>
+    <Copyright>© 2021, b3r8t3r. All rights reserved.</Copyright>
+    <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
+    <Title>$(AssemblyName)</Title>
+    <Description>Основные файлы ресурсов, необходимые для работы Interactive Book Reader и Interactive Book Editor.</Description>
+    <PackageProjectUrl>https://github.com/b3r8t3r/Interactive-Book-Reader</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/b3r8t3r/Interactive-Book-Reader</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Interactive book</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>

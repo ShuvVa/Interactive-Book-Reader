@@ -2,22 +2,39 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
-    <RootNamespace>Interactive_Book_Reader</RootNamespace>
+    <TargetFramework>net6.0-windows10.0.22621.0</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <SignAssembly>False</SignAssembly>
-    <Description>Программа для чтения, создания и редактирования интерактивных книг.</Description>
-    <Copyright>Open-Source Project</Copyright>
+    <Description>Программа для создания и редактирования интерактивных книг.</Description>
+    <Copyright>© 2021, b3r8t3r. All rights reserved.</Copyright>
     <ApplicationIcon>Scroll icon.ico</ApplicationIcon>
-    <PackageProjectUrl></PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/b3r8t3r/Interactive-Book-Reader</PackageProjectUrl>
     <RepositoryUrl>https://github.com/b3r8t3r/Interactive-Book-Reader</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
+    <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>Interactive book</PackageTags>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    <Title>$(AssemblyName)</Title>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
     <Content Include="Scroll icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
