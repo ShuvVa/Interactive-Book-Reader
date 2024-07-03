@@ -13,14 +13,17 @@
     <Description>Программа для чтения интерактивных книг.</Description>
     <Copyright>© 2021, b3r8t3r. All rights reserved.</Copyright>
     <Company />
-    <Authors>$(Authors)</Authors>
+    <Authors>b3r8t3r</Authors>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageProjectUrl>https://github.com/b3r8t3r/Interactive-Book-Reader</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/b3r8t3r/Interactive-Book-Reader</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/b3r8t3r/Interactive-Story-Book</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/b3r8t3r/Interactive-Story-Book</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>Interactive book</PackageTags>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>$(MSBuildProjectName.Replace(" ", "_"))</PackageId>
+    <Version>0.7.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -35,7 +38,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Interactive Book Core\Interactive Book Core.csproj" />
+    <ProjectReference Include="..\Interactive Story Book Core\Interactive Story Book Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,1 +1,3 @@
-# Interactive Book Reader
+# Interactive Story Book
+## 
+Этот программный комплекс 

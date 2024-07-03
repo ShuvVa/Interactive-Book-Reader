@@ -5,18 +5,20 @@
     <RootNamespace>Interactive_Book_Namespace</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Authors>$(Authors)</Authors>
+    <Authors>b3r8t3r</Authors>
     <Copyright>© 2021, b3r8t3r. All rights reserved.</Copyright>
     <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
     <Title>$(AssemblyName)</Title>
     <Description>Основные файлы ресурсов, необходимые для работы Interactive Book Reader и Interactive Book Editor.</Description>
-    <PackageProjectUrl>https://github.com/b3r8t3r/Interactive-Book-Reader</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/b3r8t3r/Interactive-Story-Book</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <RepositoryUrl>https://github.com/b3r8t3r/Interactive-Book-Reader</RepositoryUrl>
+    <RepositoryUrl>https://github.com/b3r8t3r/Interactive-Story-Book</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>Interactive book</PackageTags>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageId>$(MSBuildProjectName.Replace(" ", "_"))</PackageId>
+    <Version>0.7.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
