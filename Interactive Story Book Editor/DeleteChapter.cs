@@ -8,7 +8,7 @@
 //using System.Threading.Tasks;
 //using System.Windows.Forms;
 
-namespace Interactive_Book_Editor
+namespace Interactive_Story_Book_Editor
 {
     public partial class DeleteChapter : Form
     {

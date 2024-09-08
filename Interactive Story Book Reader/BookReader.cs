@@ -2,9 +2,9 @@
 //using System.IO;
 using System.Text.Json;
 //using System.Threading.Tasks;
-using Interactive_Book_Namespace;
+using Interactive_Story_Book;
 
-namespace Interactive_Book_Reader
+namespace Interactive_Story_Book_Reader
 {
     public partial class BookReader : Form
     {

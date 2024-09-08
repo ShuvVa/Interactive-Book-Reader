@@ -4,7 +4,7 @@
 using System.Text;
 //using System.Threading.Tasks;
 
-namespace Interactive_Book_Namespace
+namespace Interactive_Story_Book
 {
     // Модификация шифра Вижинера, шифрующая сообщения в пределах 95 символов (ASCII - [32;126])
     public class Viginer_95

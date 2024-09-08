@@ -1,4 +1,4 @@
-﻿namespace Interactive_Book_Editor
+﻿namespace Interactive_Story_Book_Editor
 {
     partial class BookEditor
     {

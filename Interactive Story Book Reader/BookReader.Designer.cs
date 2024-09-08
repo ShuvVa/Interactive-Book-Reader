@@ -1,4 +1,4 @@
-﻿namespace Interactive_Book_Reader
+﻿namespace Interactive_Story_Book_Reader
 {
     partial class BookReader
     {
