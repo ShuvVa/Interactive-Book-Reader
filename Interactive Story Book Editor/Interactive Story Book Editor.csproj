@@ -2,10 +2,10 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows10.0.22621.0</TargetFramework>
+    <TargetFramework>net7.0-windows10.0.22621.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <StartupObject>Interactive_Book_Editor.Program</StartupObject>
+    <StartupObject>Interactive_Story_Book_Editor.Program</StartupObject>
     <ApplicationIcon>Scroll with feather icon.ico</ApplicationIcon>
     <UseWindowsForms>True</UseWindowsForms>
     <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
@@ -24,6 +24,10 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>$(MSBuildProjectName.Replace(" ", "_"))</PackageId>
     <Version>0.7.0</Version>
+	<ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+	<ForceDesignerDpiUnaware>true</ForceDesignerDpiUnaware>
+	<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+	<AnalysisLevel>latest-recommended</AnalysisLevel>
   </PropertyGroup>
 
   <ItemGroup>
