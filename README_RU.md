@@ -1,4 +1,8 @@
 # Interactive Story Book
+![GitHub License](https://img.shields.io/github/license/b3r8t3r/Interactive-Story-Book)
+![GitHub Release](https://img.shields.io/github/v/release/b3r8t3r/Interactive-Story-Book?label=version)
+
+
 ## Описание
 Этот программный комплекс предназначен для чтения, создания и редактирования интерактивных книг в формате *isb* (Interactive Story Book).
 

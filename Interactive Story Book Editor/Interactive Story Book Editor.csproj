@@ -21,13 +21,22 @@
     <PackageTags>Interactive book</PackageTags>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <PackageId>$(MSBuildProjectName.Replace(" ", "_"))</PackageId>
-    <Version>0.7.0</Version>
+    <Version>1.0.0</Version>
 	<ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
 	<ForceDesignerDpiUnaware>true</ForceDesignerDpiUnaware>
 	<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
 	<AnalysisLevel>latest-recommended</AnalysisLevel>
+	<SignAssembly>False</SignAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <IsPublishable>False</IsPublishable>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <IsPublishable>False</IsPublishable>
   </PropertyGroup>
 
   <ItemGroup>
