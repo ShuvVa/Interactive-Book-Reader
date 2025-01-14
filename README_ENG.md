@@ -18,7 +18,7 @@ This program complex is designed for reading, creating and editing interactive b
 2. [Installation](#installation) \
 2.1 [Windows](#windows)
 3. [Usage](#usage) \
-3.1 [Reading with Interactive Book Reader](#reading-with-interactive-book-reader)
+3.1 [Reading with Interactive Book Reader](#reading-with-interactive-book-reader) \
 3.2 [Creating Interactive Books with Interactive Book Editor](#creating-interactive-books-with-interactive-book-editor)
 4. [Development](#development) \
 4.1 [Requirements](#requirements) \
