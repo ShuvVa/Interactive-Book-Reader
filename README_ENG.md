@@ -69,8 +69,8 @@ To change the variants of the outcome of the chapter you need to go to the secti
 
 ### Requirements
 
-- Visual Studio 2019 и более с установленным компонентом "Разработка классических приложений .NET".
+- Visual Studio 2019 or more with the Classic .NET Application Development component installed.
 
 ### Create a build
 
-Откройте файл проекта `Interactive Story Book.sln` с помощью Visual Studio и воспользуйтесь комбинацией клавиш `Ctrl+Shift+B` - это позволит собрать решение.
+Open the `Interactive Story Book.sln` project file using Visual Studio and use the `Ctrl+Shift+B` key combination - this will build the solution.
