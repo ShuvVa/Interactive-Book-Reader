@@ -1,9 +1,9 @@
 # Interactive Story Book
 
-![GitHub License](https://img.shields.io/github/license/b3r8t3r/Interactive-Story-Book)
-![GitHub Release](https://img.shields.io/github/v/release/b3r8t3r/Interactive-Story-Book?label=version)
-![(https://github.com/b3r8t3r/Interactive-Story-Book/blob/master/README.md)](https://img.shields.io/badge/readme-%F0%9F%87%B7%F0%9F%87%BA%20russian-green)
-![(https://github.com/b3r8t3r/Interactive-Story-Book/blob/master/README_ENG.md)](https://img.shields.io/badge/readme-%F0%9F%87%AC%F0%9F%87%A7%20english-green)
+[![GitHub License](https://img.shields.io/github/license/b3r8t3r/Interactive-Story-Book)](https://github.com/b3r8t3r/Interactive-Story-Book/blob/master/LICENSE)
+[![GitHub Release](https://img.shields.io/github/v/release/b3r8t3r/Interactive-Story-Book?label=version)](https://github.com/b3r8t3r/Interactive-Story-Book/releases)
+[![(https://github.com/b3r8t3r/Interactive-Story-Book/blob/master/README.md)](https://img.shields.io/badge/readme-%F0%9F%87%B7%F0%9F%87%BA%20russian-green)](https://github.com/b3r8t3r/Interactive-Story-Book/blob/master/README.md)
+[![(README_ENG)](https://img.shields.io/badge/readme-%F0%9F%87%AC%F0%9F%87%A7%20english-green)](https://github.com/b3r8t3r/Interactive-Story-Book/blob/master/README_ENG.md)
 ![Windows](https://img.shields.io/badge/Available%20on-Windows-blue)
 
 ## Описание
